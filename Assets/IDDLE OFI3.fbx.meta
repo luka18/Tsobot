@@ -1,0 +1,2817 @@
+fileFormatVersion: 2
+guid: a0d349348229be049ae25b562fee5c6a
+timeCreated: 1456942762
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: group2
+    100002: //RootNode
+    100004: joint10
+    100006: joint11
+    100008: joint12
+    100010: joint13
+    100012: joint14
+    100014: joint15
+    100016: joint16
+    100018: joint17
+    100020: joint20
+    100022: joint21
+    100024: joint22
+    100026: joint23
+    100028: joint24
+    100030: joint25
+    100032: joint26
+    100034: joint27
+    100036: joint28
+    100038: joint29
+    100040: joint30
+    100042: joint31
+    100044: joint32
+    100046: joint33
+    100048: joint34
+    100050: joint35
+    100052: joint36
+    100054: joint37
+    100056: joint38
+    100058: joint39
+    100060: joint4
+    100062: joint40
+    100064: joint41
+    100066: joint42
+    100068: joint43
+    100070: joint44
+    100072: joint45
+    100074: joint46
+    100076: joint47
+    100078: joint48
+    100080: joint49
+    100082: joint5
+    100084: joint50
+    100086: joint6
+    100088: joint7
+    100090: joint8
+    100092: joint9
+    100094: mnr_120:mnr_120:body
+    100096: mnr_120:mnr_120:L_Forearm
+    100098: mnr_120:mnr_120:L_Forearm01
+    100100: mnr_120:mnr_120:L_Hand
+    100102: mnr_120:mnr_120:L_Hand01
+    100104: mnr_120:mnr_120:L_UpperArm
+    100106: mnr_120:mnr_120:L_UpperArm01
+    100108: mnr_120:mnr_120:neck
+    100110: nurbsCircle7
+    100112: pasted__polySurface7
+    100114: polySurface1
+    100116: polySurface10
+    100118: polySurface101
+    100120: polySurface102
+    100122: polySurface104
+    100124: polySurface11
+    100126: polySurface12
+    100128: polySurface13
+    100130: polySurface14
+    100132: polySurface15
+    100134: polySurface16
+    100136: polySurface17
+    100138: polySurface18
+    100140: polySurface19
+    100142: polySurface2
+    100144: polySurface20
+    100146: polySurface21
+    100148: polySurface22
+    100150: polySurface23
+    100152: polySurface24
+    100154: polySurface25
+    100156: polySurface26
+    100158: polySurface27
+    100160: polySurface28
+    100162: polySurface29
+    100164: polySurface3
+    100166: polySurface30
+    100168: polySurface31
+    100170: polySurface32
+    100172: polySurface33
+    100174: polySurface34
+    100176: polySurface35
+    100178: polySurface36
+    100180: polySurface37
+    100182: polySurface38
+    100184: polySurface39
+    100186: polySurface4
+    100188: polySurface40
+    100190: polySurface41
+    100192: polySurface42
+    100194: polySurface43
+    100196: polySurface44
+    100198: polySurface45
+    100200: polySurface5
+    100202: polySurface50
+    100204: polySurface51
+    100206: polySurface54
+    100208: polySurface6
+    100210: polySurface7
+    100212: polySurface71
+    100214: polySurface72
+    100216: polySurface73
+    100218: polySurface74
+    100220: polySurface75
+    100222: polySurface76
+    100224: polySurface77
+    100226: polySurface78
+    100228: polySurface79
+    100230: polySurface8
+    100232: polySurface80
+    100234: polySurface81
+    100236: polySurface82
+    100238: polySurface84
+    100240: polySurface86
+    100242: polySurface88
+    100244: polySurface9
+    100246: polySurface90
+    100248: polySurface92
+    100250: polySurface94
+    100252: polySurface97
+    100254: polySurface98
+    100256: transform1
+    100258: transform10
+    100260: transform11
+    100262: transform12
+    100264: transform13
+    100266: transform14
+    100268: transform15
+    100270: transform16
+    100272: transform17
+    100274: transform18
+    100276: transform19
+    100278: transform2
+    100280: transform20
+    100282: transform21
+    100284: transform22
+    100286: transform23
+    100288: transform24
+    100290: transform25
+    100292: transform26
+    100294: transform27
+    100296: transform28
+    100298: transform29
+    100300: transform3
+    100302: transform30
+    100304: transform31
+    100306: transform32
+    100308: transform33
+    100310: transform34
+    100312: transform35
+    100314: transform36
+    100316: transform37
+    100318: transform38
+    100320: transform39
+    100322: transform4
+    100324: transform40
+    100326: transform41
+    100328: transform42
+    100330: transform43
+    100332: transform44
+    100334: transform45
+    100336: transform46
+    100338: transform47
+    100340: transform48
+    100342: transform5
+    100344: transform57
+    100346: transform6
+    100348: transform7
+    100350: transform8
+    100352: transform9
+    400000: group2
+    400002: //RootNode
+    400004: joint10
+    400006: joint11
+    400008: joint12
+    400010: joint13
+    400012: joint14
+    400014: joint15
+    400016: joint16
+    400018: joint17
+    400020: joint20
+    400022: joint21
+    400024: joint22
+    400026: joint23
+    400028: joint24
+    400030: joint25
+    400032: joint26
+    400034: joint27
+    400036: joint28
+    400038: joint29
+    400040: joint30
+    400042: joint31
+    400044: joint32
+    400046: joint33
+    400048: joint34
+    400050: joint35
+    400052: joint36
+    400054: joint37
+    400056: joint38
+    400058: joint39
+    400060: joint4
+    400062: joint40
+    400064: joint41
+    400066: joint42
+    400068: joint43
+    400070: joint44
+    400072: joint45
+    400074: joint46
+    400076: joint47
+    400078: joint48
+    400080: joint49
+    400082: joint5
+    400084: joint50
+    400086: joint6
+    400088: joint7
+    400090: joint8
+    400092: joint9
+    400094: mnr_120:mnr_120:body
+    400096: mnr_120:mnr_120:L_Forearm
+    400098: mnr_120:mnr_120:L_Forearm01
+    400100: mnr_120:mnr_120:L_Hand
+    400102: mnr_120:mnr_120:L_Hand01
+    400104: mnr_120:mnr_120:L_UpperArm
+    400106: mnr_120:mnr_120:L_UpperArm01
+    400108: mnr_120:mnr_120:neck
+    400110: nurbsCircle7
+    400112: pasted__polySurface7
+    400114: polySurface1
+    400116: polySurface10
+    400118: polySurface101
+    400120: polySurface102
+    400122: polySurface104
+    400124: polySurface11
+    400126: polySurface12
+    400128: polySurface13
+    400130: polySurface14
+    400132: polySurface15
+    400134: polySurface16
+    400136: polySurface17
+    400138: polySurface18
+    400140: polySurface19
+    400142: polySurface2
+    400144: polySurface20
+    400146: polySurface21
+    400148: polySurface22
+    400150: polySurface23
+    400152: polySurface24
+    400154: polySurface25
+    400156: polySurface26
+    400158: polySurface27
+    400160: polySurface28
+    400162: polySurface29
+    400164: polySurface3
+    400166: polySurface30
+    400168: polySurface31
+    400170: polySurface32
+    400172: polySurface33
+    400174: polySurface34
+    400176: polySurface35
+    400178: polySurface36
+    400180: polySurface37
+    400182: polySurface38
+    400184: polySurface39
+    400186: polySurface4
+    400188: polySurface40
+    400190: polySurface41
+    400192: polySurface42
+    400194: polySurface43
+    400196: polySurface44
+    400198: polySurface45
+    400200: polySurface5
+    400202: polySurface50
+    400204: polySurface51
+    400206: polySurface54
+    400208: polySurface6
+    400210: polySurface7
+    400212: polySurface71
+    400214: polySurface72
+    400216: polySurface73
+    400218: polySurface74
+    400220: polySurface75
+    400222: polySurface76
+    400224: polySurface77
+    400226: polySurface78
+    400228: polySurface79
+    400230: polySurface8
+    400232: polySurface80
+    400234: polySurface81
+    400236: polySurface82
+    400238: polySurface84
+    400240: polySurface86
+    400242: polySurface88
+    400244: polySurface9
+    400246: polySurface90
+    400248: polySurface92
+    400250: polySurface94
+    400252: polySurface97
+    400254: polySurface98
+    400256: transform1
+    400258: transform10
+    400260: transform11
+    400262: transform12
+    400264: transform13
+    400266: transform14
+    400268: transform15
+    400270: transform16
+    400272: transform17
+    400274: transform18
+    400276: transform19
+    400278: transform2
+    400280: transform20
+    400282: transform21
+    400284: transform22
+    400286: transform23
+    400288: transform24
+    400290: transform25
+    400292: transform26
+    400294: transform27
+    400296: transform28
+    400298: transform29
+    400300: transform3
+    400302: transform30
+    400304: transform31
+    400306: transform32
+    400308: transform33
+    400310: transform34
+    400312: transform35
+    400314: transform36
+    400316: transform37
+    400318: transform38
+    400320: transform39
+    400322: transform4
+    400324: transform40
+    400326: transform41
+    400328: transform42
+    400330: transform43
+    400332: transform44
+    400334: transform45
+    400336: transform46
+    400338: transform47
+    400340: transform48
+    400342: transform5
+    400344: transform57
+    400346: transform6
+    400348: transform7
+    400350: transform8
+    400352: transform9
+    2300000: mnr_120:mnr_120:body
+    2300002: mnr_120:mnr_120:L_Forearm
+    2300004: mnr_120:mnr_120:L_Forearm01
+    2300006: mnr_120:mnr_120:L_UpperArm
+    2300008: mnr_120:mnr_120:L_UpperArm01
+    2300010: mnr_120:mnr_120:neck
+    2300012: polySurface101
+    2300014: polySurface102
+    2300016: polySurface104
+    2300018: polySurface28
+    2300020: polySurface54
+    2300022: polySurface71
+    2300024: polySurface72
+    2300026: polySurface73
+    2300028: polySurface74
+    2300030: polySurface75
+    2300032: polySurface76
+    2300034: polySurface77
+    2300036: polySurface78
+    2300038: polySurface79
+    2300040: polySurface80
+    2300042: polySurface81
+    2300044: polySurface82
+    2300046: polySurface84
+    2300048: polySurface86
+    2300050: polySurface88
+    2300052: polySurface90
+    2300054: polySurface92
+    2300056: polySurface94
+    2300058: polySurface97
+    2300060: polySurface98
+    3300000: mnr_120:mnr_120:body
+    3300002: mnr_120:mnr_120:L_Forearm
+    3300004: mnr_120:mnr_120:L_Forearm01
+    3300006: mnr_120:mnr_120:L_UpperArm
+    3300008: mnr_120:mnr_120:L_UpperArm01
+    3300010: mnr_120:mnr_120:neck
+    3300012: polySurface101
+    3300014: polySurface102
+    3300016: polySurface104
+    3300018: polySurface28
+    3300020: polySurface54
+    3300022: polySurface71
+    3300024: polySurface72
+    3300026: polySurface73
+    3300028: polySurface74
+    3300030: polySurface75
+    3300032: polySurface76
+    3300034: polySurface77
+    3300036: polySurface78
+    3300038: polySurface79
+    3300040: polySurface80
+    3300042: polySurface81
+    3300044: polySurface82
+    3300046: polySurface84
+    3300048: polySurface86
+    3300050: polySurface88
+    3300052: polySurface90
+    3300054: polySurface92
+    3300056: polySurface94
+    3300058: polySurface97
+    3300060: polySurface98
+    4300000: mnr_120:mnr_120:body
+    4300002: mnr_120:mnr_120:neck
+    4300004: polySurface104
+    4300006: polySurface28
+    4300008: polySurface72
+    4300010: polySurface71
+    4300012: polySurface73
+    4300014: polySurface74
+    4300016: polySurface75
+    4300018: polySurface78
+    4300020: polySurface77
+    4300022: polySurface76
+    4300024: polySurface81
+    4300026: polySurface80
+    4300028: polySurface79
+    4300030: mnr_120:mnr_120:L_Forearm01
+    4300032: mnr_120:mnr_120:L_UpperArm01
+    4300034: polySurface54
+    4300036: polySurface101
+    4300038: polySurface102
+    4300040: polySurface97
+    4300042: polySurface84
+    4300044: polySurface82
+    4300046: polySurface94
+    4300048: polySurface86
+    4300050: polySurface88
+    4300052: polySurface98
+    4300054: polySurface92
+    4300056: polySurface90
+    4300058: mnr_120:mnr_120:L_Forearm
+    4300060: mnr_120:mnr_120:L_UpperArm
+    7400000: Carry
+    7400002: Carrying
+    7400004: UnCarry
+    7400006: Crouch
+    7400008: Crouching
+    7400010: UnCrouch
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Carry
+      takeName: Take 001
+      firstFrame: 870
+      lastFrame: 879
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/joint7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/group2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck/polySurface104
+        weight: 1
+      - path: nurbsCircle7/joint7/joint8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/joint26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/polySurface72
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/polySurface71
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/polySurface73
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/polySurface74
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/polySurface75
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/polySurface78
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/polySurface77
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/polySurface76
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/polySurface81
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/polySurface80
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/polySurface79
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1/transform6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2/transform7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4/transform8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5/transform9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7/transform5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8/transform4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10/transform27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11/transform28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13/transform12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14/transform13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15/transform24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16/transform21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17/transform20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18/transform18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19/transform19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20/transform15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21/transform14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22/transform26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23/transform25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24/transform17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25/transform16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27/transform23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/transform22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/transform11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/transform10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/transform3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/transform2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/transform1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/mnr_120:mnr_120:L_Forearm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/mnr_120:mnr_120:L_UpperArm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/polySurface101
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/polySurface102
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/polySurface97
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/polySurface84
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/polySurface82
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/polySurface94
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/polySurface86
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/polySurface88
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/polySurface98
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/polySurface92
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/polySurface90
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29/transform33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30/transform32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31/transform31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32/transform30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34/transform41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35/transform40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37/transform36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38/transform37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39/transform38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40/transform39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42/transform46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43/transform45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44/transform47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45/transform48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50/transform44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51/transform43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface54
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/transform42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/transform35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/transform34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/transform29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7/transform57
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/mnr_120:mnr_120:L_Forearm
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/mnr_120:mnr_120:L_UpperArm
+        weight: 1
+      - path: nurbsCircle7/joint7/mnr_120:mnr_120:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Carrying
+      takeName: Take 001
+      firstFrame: 880
+      lastFrame: 908
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/joint7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/group2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck/polySurface104
+        weight: 1
+      - path: nurbsCircle7/joint7/joint8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/joint26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/polySurface72
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/polySurface71
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/polySurface73
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/polySurface74
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/polySurface75
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/polySurface78
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/polySurface77
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/polySurface76
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/polySurface81
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/polySurface80
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/polySurface79
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1/transform6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2/transform7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4/transform8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5/transform9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7/transform5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8/transform4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10/transform27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11/transform28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13/transform12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14/transform13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15/transform24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16/transform21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17/transform20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18/transform18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19/transform19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20/transform15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21/transform14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22/transform26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23/transform25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24/transform17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25/transform16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27/transform23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/transform22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/transform11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/transform10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/transform3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/transform2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/transform1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/mnr_120:mnr_120:L_Forearm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/mnr_120:mnr_120:L_UpperArm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/polySurface101
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/polySurface102
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/polySurface97
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/polySurface84
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/polySurface82
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/polySurface94
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/polySurface86
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/polySurface88
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/polySurface98
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/polySurface92
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/polySurface90
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29/transform33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30/transform32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31/transform31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32/transform30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34/transform41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35/transform40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37/transform36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38/transform37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39/transform38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40/transform39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42/transform46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43/transform45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44/transform47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45/transform48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50/transform44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51/transform43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface54
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/transform42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/transform35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/transform34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/transform29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7/transform57
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/mnr_120:mnr_120:L_Forearm
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/mnr_120:mnr_120:L_UpperArm
+        weight: 1
+      - path: nurbsCircle7/joint7/mnr_120:mnr_120:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: UnCarry
+      takeName: Take 001
+      firstFrame: 909
+      lastFrame: 918
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/joint7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/group2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck/polySurface104
+        weight: 1
+      - path: nurbsCircle7/joint7/joint8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/joint26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/polySurface72
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/polySurface71
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/polySurface73
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/polySurface74
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/polySurface75
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/polySurface78
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/polySurface77
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/polySurface76
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/polySurface81
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/polySurface80
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/polySurface79
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1/transform6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2/transform7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4/transform8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5/transform9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7/transform5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8/transform4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10/transform27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11/transform28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13/transform12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14/transform13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15/transform24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16/transform21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17/transform20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18/transform18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19/transform19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20/transform15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21/transform14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22/transform26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23/transform25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24/transform17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25/transform16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27/transform23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/transform22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/transform11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/transform10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/transform3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/transform2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/transform1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/mnr_120:mnr_120:L_Forearm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/mnr_120:mnr_120:L_UpperArm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/polySurface101
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/polySurface102
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/polySurface97
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/polySurface84
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/polySurface82
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/polySurface94
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/polySurface86
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/polySurface88
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/polySurface98
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/polySurface92
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/polySurface90
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29/transform33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30/transform32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31/transform31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32/transform30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34/transform41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35/transform40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37/transform36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38/transform37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39/transform38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40/transform39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42/transform46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43/transform45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44/transform47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45/transform48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50/transform44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51/transform43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface54
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/transform42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/transform35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/transform34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/transform29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7/transform57
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/mnr_120:mnr_120:L_Forearm
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/mnr_120:mnr_120:L_UpperArm
+        weight: 1
+      - path: nurbsCircle7/joint7/mnr_120:mnr_120:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Crouch
+      takeName: Take 001
+      firstFrame: 919
+      lastFrame: 925
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/joint7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/group2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck/polySurface104
+        weight: 1
+      - path: nurbsCircle7/joint7/joint8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/joint26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/polySurface72
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/polySurface71
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/polySurface73
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/polySurface74
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/polySurface75
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/polySurface78
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/polySurface77
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/polySurface76
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/polySurface81
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/polySurface80
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/polySurface79
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1/transform6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2/transform7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4/transform8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5/transform9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7/transform5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8/transform4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10/transform27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11/transform28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13/transform12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14/transform13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15/transform24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16/transform21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17/transform20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18/transform18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19/transform19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20/transform15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21/transform14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22/transform26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23/transform25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24/transform17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25/transform16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27/transform23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/transform22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/transform11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/transform10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/transform3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/transform2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/transform1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/mnr_120:mnr_120:L_Forearm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/mnr_120:mnr_120:L_UpperArm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/polySurface101
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/polySurface102
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/polySurface97
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/polySurface84
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/polySurface82
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/polySurface94
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/polySurface86
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/polySurface88
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/polySurface98
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/polySurface92
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/polySurface90
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29/transform33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30/transform32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31/transform31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32/transform30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34/transform41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35/transform40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37/transform36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38/transform37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39/transform38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40/transform39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42/transform46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43/transform45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44/transform47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45/transform48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50/transform44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51/transform43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface54
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/transform42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/transform35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/transform34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/transform29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7/transform57
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/mnr_120:mnr_120:L_Forearm
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/mnr_120:mnr_120:L_UpperArm
+        weight: 1
+      - path: nurbsCircle7/joint7/mnr_120:mnr_120:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Crouching
+      takeName: Take 001
+      firstFrame: 925
+      lastFrame: 1059
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/joint7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/group2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck/polySurface104
+        weight: 1
+      - path: nurbsCircle7/joint7/joint8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/joint26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/polySurface72
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/polySurface71
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/polySurface73
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/polySurface74
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/polySurface75
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/polySurface78
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/polySurface77
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/polySurface76
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/polySurface81
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/polySurface80
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/polySurface79
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1/transform6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2/transform7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4/transform8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5/transform9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7/transform5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8/transform4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10/transform27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11/transform28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13/transform12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14/transform13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15/transform24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16/transform21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17/transform20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18/transform18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19/transform19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20/transform15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21/transform14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22/transform26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23/transform25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24/transform17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25/transform16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27/transform23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/transform22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/transform11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/transform10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/transform3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/transform2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/transform1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/mnr_120:mnr_120:L_Forearm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/mnr_120:mnr_120:L_UpperArm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/polySurface101
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/polySurface102
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/polySurface97
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/polySurface84
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/polySurface82
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/polySurface94
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/polySurface86
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/polySurface88
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/polySurface98
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/polySurface92
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/polySurface90
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29/transform33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30/transform32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31/transform31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32/transform30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34/transform41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35/transform40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37/transform36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38/transform37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39/transform38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40/transform39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42/transform46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43/transform45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44/transform47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45/transform48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50/transform44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51/transform43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface54
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/transform42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/transform35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/transform34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/transform29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7/transform57
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/mnr_120:mnr_120:L_Forearm
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/mnr_120:mnr_120:L_UpperArm
+        weight: 1
+      - path: nurbsCircle7/joint7/mnr_120:mnr_120:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: UnCrouch
+      takeName: Take 001
+      firstFrame: 1060
+      lastFrame: 1064
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/joint7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/group2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck
+        weight: 1
+      - path: nurbsCircle7/joint7/joint4/mnr_120:mnr_120:neck/polySurface104
+        weight: 1
+      - path: nurbsCircle7/joint7/joint8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/joint26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/joint25/polySurface72
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint24/polySurface71
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/joint29/polySurface73
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/joint28/polySurface74
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint27/polySurface75
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/joint34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/joint33/polySurface78
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/joint32/polySurface77
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint31/polySurface76
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/joint38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/joint37/polySurface81
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/joint36/polySurface80
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/joint35/polySurface79
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface1/transform6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface2/transform7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface4/transform8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface5/transform9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface7/transform5
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface8/transform4
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface10/transform27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface11/transform28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface13/transform12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface14/transform13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface15/transform24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface16/transform21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface17/transform20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface18/transform18
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface19/transform19
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface20/transform15
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface21/transform14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface22/transform26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface23/transform25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface24/transform17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface25/transform16
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface27/transform23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/polySurface28
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/polySurface26/transform22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/polySurface12/transform11
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/polySurface9/transform10
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/polySurface6/transform3
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/polySurface3/transform2
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint15/mnr_120:mnr_120:L_Hand01/transform1
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/joint11/joint23
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/joint10/mnr_120:mnr_120:L_Forearm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint9/mnr_120:mnr_120:L_UpperArm01
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint17
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/joint21/polySurface101
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint20/polySurface102
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/joint42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/joint41/polySurface97
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/joint40/polySurface84
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint39/polySurface82
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/joint46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/joint45/polySurface94
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/joint44/polySurface86
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint43/polySurface88
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/joint50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/joint49/polySurface98
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/joint48/polySurface92
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/joint47/polySurface90
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface29/transform33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface30/transform32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface31/transform31
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface32/transform30
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface34/transform41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface35/transform40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface37/transform36
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface38/transform37
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface39/transform38
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface40/transform39
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface42/transform46
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface43/transform45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface44/transform47
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface45/transform48
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface50/transform44
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface51/transform43
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/polySurface54
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/polySurface41/transform42
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/polySurface36/transform35
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/polySurface33/transform34
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/mnr_120:mnr_120:L_Hand/transform29
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/joint14/pasted__polySurface7/transform57
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/joint13/mnr_120:mnr_120:L_Forearm
+        weight: 1
+      - path: nurbsCircle7/joint7/joint12/mnr_120:mnr_120:L_UpperArm
+        weight: 1
+      - path: nurbsCircle7/joint7/mnr_120:mnr_120:body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
