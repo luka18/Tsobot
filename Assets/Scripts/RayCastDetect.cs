@@ -27,12 +27,16 @@ public class RayCastDetect : NetworkBehaviour {
     {
         obj.GetComponentInParent<ButtonsColor>().dropball(typeball);
     }
-
     [ClientRpc]
-    void RpcPressOnce(NetworkIdentity ID, int num)
+    void RpcPressOnce(NetworkIdentity ID)
     {
         GameObject obj = ID.gameObject;
         obj.GetComponent<ButtonPressedOnce>().press();
+    }
+    [ClientRpc]
+    void RpcCallMeCol(NetworkIdentity ID, int num)
+    {
+        GameObject obj = ID.gameObject;
         obj.GetComponent<CallMeColors>().call(num);
     }
 
@@ -72,9 +76,14 @@ public class RayCastDetect : NetworkBehaviour {
     }
 
     [Command]
-    void CmdPressOnce(NetworkIdentity ID, int k)
+    void CmdPressOnce(NetworkIdentity ID)
     {
-        RpcPressOnce(ID, k);
+        RpcPressOnce(ID);
+    }
+    [Command]
+    void CmdCallMeCol(NetworkIdentity ID, int k)
+    {
+        RpcCallMeCol(ID, k);
     }
     [Command]
     void CmdDrop(GameObject obj, int typeball)
@@ -139,19 +148,19 @@ public class RayCastDetect : NetworkBehaviour {
         yield return new WaitForSeconds(0.2f);
         car.transform.localPosition = new Vector3(0,3, 0);
     }
+    
 
 
 
 
-
-
+    
     // Update is called once per frame
     void Update () {
 
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
-            Debug.DrawRay(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward * 3, Color.black, 1.0f);
+            Debug.DrawRay(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward * 3, Color.black, 1.5f);
             if (carrying)
             {
                 Debug.DrawRay(transform.position , transform.forward, Color.black, 1.0f);
@@ -166,8 +175,9 @@ public class RayCastDetect : NetworkBehaviour {
 
 
             
-            else if ((Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 3.0f)))
+            else if ((Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 3.5f)))
             {
+                print("HIT: " + hit.transform.name);
                 if(hit.transform.tag == "Portal")
                 {
                     animate.CmdCarry(transform.GetComponent<NetworkIdentity>());
@@ -208,24 +218,32 @@ public class RayCastDetect : NetworkBehaviour {
                             break;
                         case "BoutonRed":
                             //CmdPressOnce(hit.transform.gameObject,3);
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>(), 3);
+                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 3);
                             break;
                         case "BoutonBleu":
                             //hit.transform.GetComponent<ButtonPressedOnce>().press();
                             //CmdPressOnce(hit.transform.gameObject,1);
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>(), 1);
+                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 1);
                             break;
                         case "BoutonVert":
                             //CmdPressOnce(hit.transform.gameObject,2);// 2 = any time you want 1 = one time
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>(), 2);
+                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 2);
                             break;
                         case "BoutonViolet":
                             //CmdPressOnce(hit.transform.gameObject,0);
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>(), 0);
+                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 0);
                             break;
                         case "BoutonGreen":
                             CmdPress(hit.transform.gameObject);
                             CmdWaves(hit.transform.gameObject);
+                            break;
+                        case "BoutonWaiting":
+                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                            hit.transform.GetComponent<BoutonToFunc>().Open();
                             break;
                     }
                 }

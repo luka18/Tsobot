@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class OpenTheDoor : MonoBehaviour {
+public class OpenTheDoor : NetworkBehaviour {
 
-     public int rate;
+    public int rate;
     Vector3 Lstart;
     Vector3 Rstart;
     void Start()
@@ -11,10 +12,17 @@ public class OpenTheDoor : MonoBehaviour {
         Lstart = transform.GetChild(0).localPosition;
         Rstart = transform.GetChild(1).localPosition;
     }
-
-    public void Open()
+    [ClientRpc]
+    void RpcOpen()
     {
         StartCoroutine(mycor2());
+    }
+
+
+    [Command]
+    public void CmdOpen()
+    {
+        RpcOpen();
     }
 
     IEnumerator mycor2()

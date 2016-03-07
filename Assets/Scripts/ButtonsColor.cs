@@ -38,7 +38,6 @@ public class ButtonsColor : NetworkBehaviour {
         NextLevel();
         NextLevel();
         NextLevel();
-        
     }
 
 
@@ -115,14 +114,13 @@ public class ButtonsColor : NetworkBehaviour {
         if (currentcolor < 4)
         {
             
-
-            print("IN NEXT LVL" + currentcolor);
             portsin.transform.GetChild(currentcolor - 1).gameObject.SetActive(false);
             portsout.transform.GetChild(currentcolor - 1).gameObject.SetActive(false);
             defcolor();
             currentcolor += 1;
             portsin.transform.GetChild(currentcolor - 1).gameObject.SetActive(true);
             portsout.transform.GetChild(currentcolor - 1).gameObject.SetActive(true);
+            //portsout.transform.GetChild(currentcolor - 1).gameObject.GetComponent<NetworkIdentity>().AssignClientAuthority(connectionToClient);
             emicolor(currentcolor);
         }
         else

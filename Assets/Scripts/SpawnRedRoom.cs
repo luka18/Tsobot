@@ -13,7 +13,7 @@ public class SpawnRedRoom : NetworkBehaviour {
 
     List<GameObject> LvlObj = new List<GameObject>();
 
-
+    [Command]
     void CmdJumper(Vector3 pos, int Rot)
     {
         GameObject obj = (GameObject)Instantiate(Jumper, pos, Quaternion.Euler(0, Rot, 0));
@@ -21,16 +21,17 @@ public class SpawnRedRoom : NetworkBehaviour {
         NetworkServer.Spawn(obj);
         
     }
-
+    [Command]
     void CmdBalance(Vector3 pos, int Rot)
     {
         GameObject obj = (GameObject)Instantiate(Balance, pos, Quaternion.Euler(0, Rot, 0));
         LvlObj.Add(obj);
         NetworkServer.Spawn(obj);
         bt.SeriRef(obj.transform.GetChild(7).gameObject);
+        obj.transform.GetChild(8).g
     }
 
- 
+    [Command]
     void CmdCar(Vector3 pos,int Rot)
     {
        GameObject obj =  (GameObject)Instantiate(PrefCar, pos,Quaternion.Euler(0,Rot,0));
@@ -42,12 +43,10 @@ public class SpawnRedRoom : NetworkBehaviour {
     {
         if(isServer)
         {
-            //Blu();
+            Blu();
             NextLevel();
             NextLevel();
             NextLevel();
-           
-
         }
     }
 

@@ -10,7 +10,7 @@ public class ButtonsToDoor : MonoBehaviour {
     [SerializeField]
     OpenTheDoor TheDoor;
 
-
+    
     private bool[] ArrayColors = new bool[] { false, false, false, false };
 
 
@@ -32,8 +32,8 @@ public class ButtonsToDoor : MonoBehaviour {
             }
 
             color.transform.GetChild(color.transform.childCount - 1).gameObject.SetActive(true);
-            if(ArrayColors[0]&&ArrayColors[1]&&ArrayColors[2]&&ArrayColors[3])
-                TheDoor.Open();
+            if (ArrayColors[0] && ArrayColors[1] && ArrayColors[2] && ArrayColors[3])
+                TheDoor.CmdOpen();
         }
        
 

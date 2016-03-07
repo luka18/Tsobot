@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 420526}
   - 108: {fileID: 10818502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 23: {fileID: 2340094}
   - 54: {fileID: 5466540}
   - 114: {fileID: 11444858}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PurpleBall
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 4: {fileID: 494486}
   - 198: {fileID: 19870584}
   - 199: {fileID: 19986138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   - 4: {fileID: 460690}
   - 198: {fileID: 19846986}
   - 199: {fileID: 19938646}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - 4: {fileID: 494134}
   - 198: {fileID: 19863472}
   - 199: {fileID: 19920012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4896,7 +4896,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121282}
