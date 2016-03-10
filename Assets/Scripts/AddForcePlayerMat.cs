@@ -4,10 +4,17 @@ using System.Collections;
 public class AddForcePlayerMat : MonoBehaviour {
 
     public int force;
+    public bool Sound;
+    private AudioSource aud;
 
     void Update()
     {
         Debug.DrawRay(transform.position, transform.up, Color.red, 1);
+    }
+
+    void Start()
+    {
+        aud = transform.GetComponent<AudioSource>();
     }
     
     void OnCollisionEnter(Collision col)
@@ -18,8 +25,10 @@ public class AddForcePlayerMat : MonoBehaviour {
             col.transform.GetComponent<RB2>().SetControl(false);
             col.rigidbody.velocity = new Vector3(0, 0, 0);
             col.rigidbody.AddForce((transform.up) * force, ForceMode.VelocityChange);
-            //Debug.DrawRay(transform.position, transform.up * force, Color.blue, 4.0f);
-            //col.rigidbody.velocity = new Vector3(col.rigidbody.velocity.x*transform.forward.x, col.rigidbody.velocity.y, col.rigidbody.velocity.z*transform.forward.z);
+            if(Sound)
+            {
+                aud.Play();
+            }
         }
     }
 }
