@@ -28,7 +28,6 @@ public class SpawnRedRoom : NetworkBehaviour {
         LvlObj.Add(obj);
         NetworkServer.Spawn(obj);
         bt.SeriRef(obj.transform.GetChild(7).gameObject);
-        obj.transform.GetChild(8).g
     }
 
     [Command]

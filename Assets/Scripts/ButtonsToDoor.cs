@@ -20,7 +20,9 @@ public class ButtonsToDoor : MonoBehaviour {
     {
         if (!ArrayColors[num])
         {
-            
+            Transform cam = transform.GetChild(0).transform;
+
+
             ArrayColors[num] = true;
 
             GameObject color = transform.GetChild(num).gameObject;
