@@ -1310,7 +1310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &123322207
 Transform:
   m_ObjectHideFlags: 0
@@ -6186,7 +6186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnColor: {fileID: 2100000, guid: 2fdcc18e95b3da14fa2d6b4d148d4e0f, type: 2}
-  axis: 2
+  axis: 3
   min: 0.1
   max: 0.2
 --- !u!23 &600637440
@@ -6245,7 +6245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a88b55ce0fa23a4b809c5e7dabc0480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bd: {fileID: 0}
+  bd: {fileID: 1225159654}
 --- !u!114 &600637444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13532,7 +13532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefCar: {fileID: 105836, guid: 1bea0744f12f7f74a96a9d556522d386, type: 2}
   Jumper: {fileID: 175482, guid: a924bf0eb18f6fa49ac13fee5bab3634, type: 2}
-  Balance: {fileID: 181286, guid: 1577dd76fc6de784c8a319848460d01d, type: 2}
+  Balance: {fileID: 189470, guid: 3e6fdc0dd2e82a54bb366259fd447cba, type: 2}
+  trig: {fileID: 130712, guid: 60ed710e45c2b6749a4906237074a438, type: 2}
   bt: {fileID: 1416061052}
 --- !u!114 &1127348731
 MonoBehaviour:
@@ -21705,7 +21706,8 @@ MonoBehaviour:
   m_SpawnPrefabs:
   - {fileID: 105836, guid: 1bea0744f12f7f74a96a9d556522d386, type: 2}
   - {fileID: 175482, guid: a924bf0eb18f6fa49ac13fee5bab3634, type: 2}
-  - {fileID: 181286, guid: 1577dd76fc6de784c8a319848460d01d, type: 2}
+  - {fileID: 189470, guid: 3e6fdc0dd2e82a54bb366259fd447cba, type: 2}
+  - {fileID: 130712, guid: 60ed710e45c2b6749a4906237074a438, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -25267,7 +25269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2038135879
 Transform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class SpawnRedRoom : NetworkBehaviour {
     [SerializeField] GameObject Jumper;
     [SerializeField] GameObject Balance;
     [SerializeField]
+    GameObject trig;
+    [SerializeField]
     ButtonsColor bt;
     private int CurrentLvl = 1;
 
@@ -28,6 +30,10 @@ public class SpawnRedRoom : NetworkBehaviour {
         LvlObj.Add(obj);
         NetworkServer.Spawn(obj);
         bt.SeriRef(obj.transform.GetChild(7).gameObject);
+        GameObject tri = (GameObject)Instantiate(trig, new Vector3(-6.673f, 16.92f, 47.5f), Quaternion.Euler(0, 0, 0));
+        LvlObj.Add(tri);
+        NetworkServer.Spawn(tri);
+        tri.transform.parent = obj.transform;
     }
 
     [Command]
