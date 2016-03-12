@@ -24,6 +24,7 @@ public class Chat : NetworkBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+       
         list = new List<string>();
         for (int i = 0; i<10;i++)
         {
@@ -47,8 +48,9 @@ public class Chat : NetworkBehaviour {
             ChatOn = true;
 
         if (ChatOn && Input.GetButtonDown("Enter_Chat"))
+        {
             Cmd_com(msg);
-
+        }
     }
 
     public void ChatModif( string str)

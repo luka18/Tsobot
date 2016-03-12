@@ -5,12 +5,23 @@ using UnityEngine.Networking;
 public class PlayerSetup : NetworkBehaviour {
     [SerializeField]
     Behaviour[] componentsToDisable;
+    [SerializeField]
+    GameObject PrefCan;
 
     Camera sceneCamera;
 
-    void Start()
+
+    [Command]
+    void CmdCan()
     {
-        
+        GameObject obj = (GameObject)Instantiate(PrefCan);
+        NetworkServer.SpawnWithClientAuthority(obj, gameObject);
+
+    }
+
+        void Start()
+    {
+        CmdCan();
 
         if(!isLocalPlayer)
         {
