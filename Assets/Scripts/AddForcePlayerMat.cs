@@ -7,10 +7,6 @@ public class AddForcePlayerMat : MonoBehaviour {
     public bool Sound;
     private AudioSource aud;
 
-    void Update()
-    {
-        Debug.DrawRay(transform.position, transform.up, Color.red, 1);
-    }
 
     void Start()
     {
