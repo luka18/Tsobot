@@ -52,6 +52,7 @@ public class Grap : MonoBehaviour
         }
         if (grapping)
         {
+            print("passssssss");
             rb2.SetControl(false);
             Debug.DrawRay(transform.position, transform.forward, Color.black, 1.0f);
             rb.AddForce(reelcam * 15 - rb.velocity, ForceMode.VelocityChange);
@@ -60,7 +61,8 @@ public class Grap : MonoBehaviour
     }
     void OnCollisionEnter()
     {
-        collision = true;
+        if(grapping)
+            collision = true;
     }
 }
 

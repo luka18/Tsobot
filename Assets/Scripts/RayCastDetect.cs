@@ -68,6 +68,11 @@ public class RayCastDetect : NetworkBehaviour {
     {
         UnCarry(obj);
     }
+    [ClientRpc]
+    void RpcToFunc(NetworkIdentity obj)
+    {
+        obj.transform.GetComponent<BoutonToFunc>().Open();
+    }
     // ----------------------------------------------------- COMMAND---------------------------------------------
     [Command]
     void CmdPress(GameObject obj)
@@ -113,6 +118,12 @@ public class RayCastDetect : NetworkBehaviour {
     {
        
         RpcUnCarry(obj);
+    }
+    [Command]
+    void CmdTofunc(NetworkIdentity obj)
+    {
+
+        RpcToFunc(obj);
     }
 
 
@@ -246,7 +257,7 @@ public class RayCastDetect : NetworkBehaviour {
                             break;
                         case "BoutonWaiting":
                             CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
-                            hit.transform.GetComponent<BoutonToFunc>().Open();
+                            CmdTofunc(hit.transform.GetComponent<NetworkIdentity>());
                             break;
                     }
                 }

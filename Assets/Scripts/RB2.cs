@@ -13,7 +13,6 @@ public class RB2 : MonoBehaviour
     public float sprintspeed = 7.5f;
     public float JumpHeight = 20.0f;
     private float jump = 0.0f;
-    private bool slowdown = false;
     private Vector3 forcetoadd;
     private Vector3 desiredmove;
     
@@ -102,7 +101,8 @@ public class RB2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        print("rond" + grounded);
+        print("cont" + cancontrol);
         print(cancontrol+"cani");
         Mouselook();
 
@@ -214,12 +214,14 @@ public class RB2 : MonoBehaviour
            
           
         }
-        if (Input.GetButtonUp("Sprint") || slowdown) 
+        if (Input.GetButtonUp("Sprint")) 
         {
-            
+
+            print("sprintup");
             speed = 5.0f;
-            slowdown = false;
+         
             cancontrol = true;
+            print("CANCONTROL = TRUE");
            
         }
 
@@ -313,8 +315,12 @@ public class RB2 : MonoBehaviour
             
             if(Vector3.Angle(coll.contacts[0].normal,Vector3.up)<maxSlope)
             {
-                if(coll.transform.tag!= "NoGrounded")
+                if (coll.transform.tag != "NoGrounded")
+                {
+
+                
                     grounded = true;
+                }
             }
         }
 
