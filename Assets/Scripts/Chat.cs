@@ -8,8 +8,14 @@ using UnityEngine.Networking;
 public class Chat : NetworkBehaviour {
 
     [SerializeField] 
-
     Text Text, TextCurrentMsg;
+
+    [SerializeField]
+    LocalP lp;
+
+    PlayerChat pc;
+
+    RB2 Myrb2;
 
     string msg;
 
@@ -20,11 +26,20 @@ public class Chat : NetworkBehaviour {
     List<string> list;
     List<string> player_list;
 
+    public void Setting()
+    {
+        
+        GameObject lol = lp.Getlocal();
+        pc = lol.GetComponent<PlayerChat>();
+        Myrb2 = pc.GetComponent<RB2>();
+    }
 
 	// Use this for initialization
 	void Start ()
     {
-       
+        
+
+
         list = new List<string>();
         for (int i = 0; i<10;i++)
         {
@@ -37,6 +52,7 @@ public class Chat : NetworkBehaviour {
     {
         if (ChatOn)
         {
+            Myrb2.SetControl(false);
             foreach (char c in Input.inputString)
             {
                 msg += c;
@@ -45,11 +61,13 @@ public class Chat : NetworkBehaviour {
             TextCurrentMsg.text = msg;
         }
         if (Input.GetButtonDown("Chat"))
+        {
             ChatOn = true;
+        }
 
         if (ChatOn && Input.GetButtonDown("Enter_Chat"))
         {
-            Cmd_com(msg);
+            pc.Send(msg);
         }
     }
 
@@ -67,7 +85,6 @@ public class Chat : NetworkBehaviour {
             a += list[i] + "\n";
         }
         Text.text = a;
-
     }
 
     [Command]

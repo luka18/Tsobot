@@ -9,6 +9,8 @@ TagManager:
   - Button
   - NoGrounded
   - Grappable
+  - UI
+  - LocalP
   layers:
   - Default
   - TransparentFX

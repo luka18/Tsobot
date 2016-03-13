@@ -7,26 +7,22 @@ public class PlayerSetup : NetworkBehaviour {
     Behaviour[] componentsToDisable;
     [SerializeField]
     GameObject PrefCan;
+    
+    LocalP localp;
 
     Camera sceneCamera;
 
 
-    [Command]
-    void CmdCan()
+    void Start()
     {
-        GameObject obj = (GameObject)Instantiate(PrefCan);
-        NetworkServer.SpawnWithClientAuthority(obj, gameObject);
-
-    }
-
-        void Start()
-    {
-        CmdCan();
+        localp = GameObject.FindGameObjectWithTag("LocalP").GetComponent<LocalP>();
+        print(localp + "LOOOOOCALP");
 
         if(!isLocalPlayer)
         {
             for (int i =0; i <componentsToDisable.Length; i++)
             {
+
                 print("mdr");
                 print(componentsToDisable[i].name);
                 componentsToDisable[i].enabled = false;
@@ -37,6 +33,8 @@ public class PlayerSetup : NetworkBehaviour {
         }
         else
         {
+            
+            localp.Setlocal(gameObject);
             transform.GetChild(2).gameObject.SetActive(false);
             print("inst local player");
             sceneCamera = Camera.main;
