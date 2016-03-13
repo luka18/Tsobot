@@ -35,9 +35,7 @@ public class ButtonsColor : NetworkBehaviour {
     private float wait;
     void Start()//to test
     {
-        NextLevel();
-        NextLevel();
-        NextLevel();
+
     }
 
 

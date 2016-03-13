@@ -49,9 +49,6 @@ public class SpawnRedRoom : NetworkBehaviour {
         if(isServer)
         {
             Blu();
-            NextLevel();
-            NextLevel();
-            NextLevel();
         }
     }
 
