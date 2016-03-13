@@ -52,7 +52,7 @@ public class Chat : NetworkBehaviour {
     {
         if (ChatOn)
         {
-            Myrb2.SetControl(false);
+            
             foreach (char c in Input.inputString)
             {
                 msg += c;
