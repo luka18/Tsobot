@@ -8,6 +8,7 @@ TagManager:
   - Portal
   - Button
   - NoGrounded
+  - Grappable
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - 
   - BallOnly
-  - 
+  - Player
   - 
   - 
   - 

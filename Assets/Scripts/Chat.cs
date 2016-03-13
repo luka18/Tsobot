@@ -61,8 +61,13 @@ public class Chat : NetworkBehaviour {
         msg = "";
         list.RemoveAt(0);
         TextCurrentMsg.text = "";
-        Text.text = list[0] + "\n" + list[1] + "\n" + list[2] + "\n" + list[3] + "\n" + list[4] + "\n" + list[5] + "\n" + list[6] + "\n" + list[7] + "\n" + list[8] + "\n" + list[9];
-        
+        string a = "";
+        for (int i = 0; i < 10; i++)
+        {
+            a += list[i] + "\n";
+        }
+        Text.text = a;
+
     }
 
     [Command]
