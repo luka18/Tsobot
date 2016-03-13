@@ -4516,13 +4516,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 425950311}
   - 114: {fileID: 425950312}
+  - 114: {fileID: 425950313}
   m_Layer: 0
   m_Name: REDTEL2
   m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &425950311
 Transform:
   m_ObjectHideFlags: 0
@@ -4550,6 +4551,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   into: {fileID: 0}
+--- !u!114 &425950313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425950310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e1e8dee4512d04caf908bd11a5b588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &430799743
 GameObject:
   m_ObjectHideFlags: 0
@@ -5032,13 +5044,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 501828237}
   - 114: {fileID: 501828238}
+  - 114: {fileID: 501828239}
   m_Layer: 0
   m_Name: Green In
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &501828237
 Transform:
   m_ObjectHideFlags: 0
@@ -5085,6 +5098,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &501828239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 501828236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e1e8dee4512d04caf908bd11a5b588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &504830254
 GameObject:
   m_ObjectHideFlags: 0
@@ -6425,7 +6449,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 617491464}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5000001, w: 0.49999994}
-  m_LocalPosition: {x: 0.215, y: -0.011, z: -0.03}
+  m_LocalPosition: {x: -0.24, y: -0.011, z: -0.03}
   m_LocalScale: {x: 2.1, y: 0.01, z: 2.1}
   m_Children: []
   m_Father: {fileID: 1363198289}
@@ -8389,13 +8413,14 @@ GameObject:
   - 114: {fileID: 727604080}
   - 114: {fileID: 727604079}
   - 65: {fileID: 727604078}
+  - 114: {fileID: 727604081}
   m_Layer: 0
   m_Name: GreenOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &727604077
 Transform:
   m_ObjectHideFlags: 0
@@ -8467,6 +8492,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &727604081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 727604076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e1e8dee4512d04caf908bd11a5b588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &738579305
 GameObject:
   m_ObjectHideFlags: 0
@@ -11918,7 +11954,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23000002
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11926,7 +11962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.030002594
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalRotation.x
@@ -15135,13 +15171,14 @@ GameObject:
   - 114: {fileID: 1285162354}
   - 114: {fileID: 1285162353}
   - 65: {fileID: 1285162355}
+  - 114: {fileID: 1285162356}
   m_Layer: 0
   m_Name: Purple Out
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1285162352
 Transform:
   m_ObjectHideFlags: 0
@@ -15213,6 +15250,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 2.5, z: 2.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1285162356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285162351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e1e8dee4512d04caf908bd11a5b588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1285777367
 Prefab:
   m_ObjectHideFlags: 0
@@ -16013,7 +16061,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1363198288}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 27.7, y: 17.54, z: 54}
+  m_LocalPosition: {x: 27.26, y: 17.54, z: 54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 617491465}
@@ -16729,13 +16777,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1432521214}
+  - 114: {fileID: 1432521215}
   m_Layer: 0
   m_Name: REDTEL1
   m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1432521214
 Transform:
   m_ObjectHideFlags: 0
@@ -16751,6 +16800,17 @@ Transform:
   - {fileID: 1218021900}
   m_Father: {fileID: 123322207}
   m_RootOrder: 3
+--- !u!114 &1432521215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1432521213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e1e8dee4512d04caf908bd11a5b588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1439709705
 GameObject:
   m_ObjectHideFlags: 0
@@ -18668,13 +18728,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 1658756143}
   - 114: {fileID: 1658756144}
+  - 114: {fileID: 1658756145}
   m_Layer: 0
   m_Name: Circle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1658756143
 Transform:
   m_ObjectHideFlags: 0
@@ -18721,6 +18782,17 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &1658756145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658756142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e1e8dee4512d04caf908bd11a5b588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1660639182
 GameObject:
   m_ObjectHideFlags: 0
