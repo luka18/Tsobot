@@ -15,11 +15,14 @@ public class RayCastDetect : NetworkBehaviour {
     private Quaternion rot;
     private NetworkIdentity ObjCarry;
     private RB2 MyRB2;
+    int layermask;
 
     void Start()
     {
         cam = transform.FindChild("Camera");
         MyRB2 = transform.GetComponent<RB2>();
+        layermask = 1 << 9;
+        layermask = ~layermask;
     }
     //------------------------------------------RPC-----------------------------------------
     [ClientRpc]
@@ -175,7 +178,7 @@ public class RayCastDetect : NetworkBehaviour {
 
 
             
-            else if ((Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 3.5f)))
+            else if ((Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 3.5f,layermask)))
             {
                 print("HIT: " + hit.transform.name);
                 if(hit.transform.tag == "Portal")
