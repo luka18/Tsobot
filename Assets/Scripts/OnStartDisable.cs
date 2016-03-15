@@ -8,7 +8,6 @@ public class OnStartDisable : MonoBehaviour {
     {
         foreach(NetworkTransform k in transform.gameObject.GetComponentsInChildren<NetworkTransform>())
         {
-            print("passed");
             k.enabled = false;
         }
     }

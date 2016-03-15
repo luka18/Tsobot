@@ -16,10 +16,8 @@ public class ButtonPressed : MonoBehaviour {
 
     IEnumerator mycor2()
     {
-        print("inside the waiting");
         goagain = false;
         yield return new WaitForSeconds(timeleft);
-        print("finish waiting");
         Unpress();
         goagain = true;
     }
@@ -45,7 +43,6 @@ public class ButtonPressed : MonoBehaviour {
 
             }
             transform.GetComponent<MeshRenderer>().material = colo;
-            print("gocour");
             StartCoroutine(mycor2());
         }
     }

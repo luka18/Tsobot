@@ -43,7 +43,6 @@ public class Falling : MonoBehaviour
                     endposy = save;
                     i = 0;
                     comeback = true;
-                    print("wow");
                 }
 
             }

@@ -10,8 +10,6 @@ public class RightToLeft : MonoBehaviour
     {
         startpos = transform.position;
     }
-
-
     void Update()
     {
         go = speed * Time.deltaTime;

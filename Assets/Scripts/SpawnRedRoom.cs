@@ -54,7 +54,6 @@ public class SpawnRedRoom : NetworkBehaviour {
 
     public void Purple()
     {
-        print("PURPLING");
         CmdCar((new Vector3(6, 12, 43.5f)), 0);
         
         CmdJumper((new Vector3(14, 12, 43.5f)), 0);
@@ -62,7 +61,6 @@ public class SpawnRedRoom : NetworkBehaviour {
     }
     public void DestroyLevel()
     {
-        print("DESTROYING");
         foreach (GameObject k in LvlObj)
         {
             NetworkServer.Destroy(k);
@@ -109,7 +107,6 @@ public class SpawnRedRoom : NetworkBehaviour {
             if (CurrentLvl < 5)
             {
                 DestroyLevel();
-                print("AFTER DESTROY");
                 switch (CurrentLvl)
                 {
                     case 2:

@@ -33,20 +33,6 @@ public class ButtonsColor : NetworkBehaviour {
     [SyncVar] int currentcolor =1;
 
     private float wait;
-    void Start()//to test
-    {
-
-    }
-
-
-
-
-
-    public void Update()
-    {
-        print(currentcolor);
-    }
-
 
     public void emicolor(int color)
     {
@@ -58,7 +44,6 @@ public class ButtonsColor : NetworkBehaviour {
                 break;
             case 2:
                 if (currentcolor > 1)
-                    print("golol ?");
                     transform.GetChild(1).GetComponent<MeshRenderer>().material = vioemi;
                 break;
             case 3: 
@@ -118,12 +103,10 @@ public class ButtonsColor : NetworkBehaviour {
             currentcolor += 1;
             portsin.transform.GetChild(currentcolor - 1).gameObject.SetActive(true);
             portsout.transform.GetChild(currentcolor - 1).gameObject.SetActive(true);
-            //portsout.transform.GetChild(currentcolor - 1).gameObject.GetComponent<NetworkIdentity>().AssignClientAuthority(connectionToClient);
             emicolor(currentcolor);
         }
         else
         {
-            print("VIIIIIIIIIIIIIIIIIIIIIIIIIIIICTOIRE");
             button.SetActive(true);
         }
        

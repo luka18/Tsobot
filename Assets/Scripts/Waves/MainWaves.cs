@@ -22,7 +22,6 @@ public class MainWaves : MonoBehaviour {
     }
     IEnumerator mycor3()
     {
-        print("in coro");
         transform.GetChild(numbofchild).gameObject.SetActive(true);
         yield return new WaitForSeconds(8);
         mur.SetActive(false);
@@ -44,7 +43,6 @@ public class MainWaves : MonoBehaviour {
                 if (i == 5)
                 {
                     timetowait = 1;
-                    print(transform.GetChild(i - 1));
                 }
                 if (i == 6)
                 {
@@ -65,7 +63,6 @@ public class MainWaves : MonoBehaviour {
             timebuffer += Time.deltaTime;
             if(numbofchild-1 == i && timebuffer > 4)
             {
-                print("im there");
                 StartCoroutine(mycor3());
                 i = 0;
                 isplaying = false;

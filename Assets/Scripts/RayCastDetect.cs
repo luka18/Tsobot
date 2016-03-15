@@ -4,7 +4,6 @@ using UnityEngine.Networking;
 
 public class RayCastDetect : NetworkBehaviour {
     private Transform cam;
-    [SyncVar]
     private NetworkIdentity objNetId;
 
     [SerializeField]
@@ -191,7 +190,6 @@ public class RayCastDetect : NetworkBehaviour {
             
             else if ((Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 3.5f,layermask)))
             {
-                print("HIT: " + hit.transform.name);
                 if(hit.transform.tag == "Portal")
                 {
                     animate.CmdCarry(transform.GetComponent<NetworkIdentity>());

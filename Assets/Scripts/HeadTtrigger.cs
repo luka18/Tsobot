@@ -3,7 +3,6 @@ using System.Collections;
 
 public class HeadTtrigger : MonoBehaviour {
     private int OnMyhead = 0;
-    private bool opti = false;
     public static bool goup = true;
     BoxCollider boxcol;
 
@@ -11,9 +10,6 @@ public class HeadTtrigger : MonoBehaviour {
     void Start () {
         boxcol = GetComponent<BoxCollider>();
 	}
-
-   
-    
     public void CrouchPlease()
     {
         boxcol.center = new Vector3(0, 0.25f, 0);
@@ -27,12 +23,10 @@ public class HeadTtrigger : MonoBehaviour {
     {
         OnMyhead += 1;
         goup = false;
-        print(OnMyhead);
     }
     void OnTriggerExit()
     {
         OnMyhead -= 1;
-        print(OnMyhead);
         if (OnMyhead == 0)
             goup = true;
 

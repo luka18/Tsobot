@@ -8,7 +8,6 @@ public class TeleportPort : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        print("gogoteleportation");
         col.transform.position = into.transform.position;
     }
 }

@@ -28,7 +28,6 @@ public class OpenTheDoor : NetworkBehaviour {
     IEnumerator mycor2()
     {
         float i = 0;
-        float rate2 = 1 / rate;
         GameObject left = transform.GetChild(0).gameObject;
         GameObject right = transform.GetChild(1).gameObject;
         while(i<1)

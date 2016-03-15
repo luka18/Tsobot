@@ -13,16 +13,10 @@ public class ButtonsToDoor : MonoBehaviour {
     
     private bool[] ArrayColors = new bool[] { false, false, false, false };
 
-
-    private int NumberOfColor = 0;
-
     public void AddColor(int num) // 0 Purple 1 Blue 2 Green 3 Red
     {
         if (!ArrayColors[num])
         {
-            Transform cam = transform.GetChild(0).transform;
-
-
             ArrayColors[num] = true;
 
             GameObject color = transform.GetChild(num).gameObject;

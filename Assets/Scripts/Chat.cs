@@ -28,7 +28,6 @@ public class Chat : NetworkBehaviour {
 
     public void Setting()
     {
-        
         GameObject lol = lp.Getlocal();
         pc = lol.GetComponent<PlayerChat>();
         Myrb2 = pc.GetComponent<RB2>();
@@ -37,9 +36,6 @@ public class Chat : NetworkBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        
-
-
         list = new List<string>();
         for (int i = 0; i<10;i++)
         {
@@ -48,15 +44,14 @@ public class Chat : NetworkBehaviour {
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
         if (ChatOn)
         {
-            
+
             foreach (char c in Input.inputString)
             {
                 msg += c;
-                print(msg);
             }
             TextCurrentMsg.text = msg;
         }
@@ -70,10 +65,8 @@ public class Chat : NetworkBehaviour {
             pc.Send(msg);
         }
     }
-
     public void ChatModif( string str)
     {
-        print("AAAAAAAAAAAAAAAAAAAAAAA" + str);
         ChatOn = false;
         list.Add(str);
         msg = "";
@@ -100,13 +93,4 @@ public class Chat : NetworkBehaviour {
     {
         ChatModif(msg);
     }
-    /*
-    private void OnGUI()
-    {
-        GUILayout.Box(msg, GUILayout.Height(350));
-        GUILayout.BeginHorizontal();
-        msg = GUILayout.TextField(msg);
-        print(msg);
-        GUILayout.EndHorizontal();
-    }*/
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DigitalRuby.ThunderAndLightning;
 
 public class Grap : MonoBehaviour
 
@@ -13,7 +14,11 @@ public class Grap : MonoBehaviour
     bool grapping = false;
     int layermask;
 
+    GameObject hitpoint;
 
+
+    //lighting bolt
+    LightningBoltPathScript lbp;
 
     // Use this for initialization
     void Start()
@@ -23,24 +28,33 @@ public class Grap : MonoBehaviour
         rb = transform.GetComponent<Rigidbody>();
         layermask = 1 << 9;
         layermask = ~layermask;
+
+
+        GameObject Lmanag = transform.GetChild(3).gameObject;
+        lbp = Lmanag.GetComponent<LightningBoltPathScript>();
+        lbp.LightningPath.List[0] = transform.gameObject;
+
+        Lmanag.transform.parent = null;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        //print(rb);
         if (Input.GetButtonDown("Grab"))
         {
             RaycastHit hit;
             if (Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 100,layermask))
             {
-                print(hit.transform.name);
                 if (hit.transform.tag == "Grappable")
                 {
                     Debug.Log(hit.transform.tag);
                     reelcam = cam.forward;
                     grapping = true;
+                    hitpoint = new GameObject();
+                    hitpoint.transform.position = hit.point;
+                    lbp.LightningPath.List[1] = hitpoint;
+                    
                 }
             }
         }
@@ -49,16 +63,24 @@ public class Grap : MonoBehaviour
             rb2.SetControl(true);
             grapping = false;
             collision = false;
+            lbp.LightningPath.List[1] = null;
+            Destroy(hitpoint);
         }
         if (grapping)
         {
-            print("passssssss");
             rb2.SetControl(false);
             Debug.DrawRay(transform.position, transform.forward, Color.black, 1.0f);
             rb.AddForce(reelcam * 15 - rb.velocity, ForceMode.VelocityChange);
-
+            
+           
         }
     }
+
+    
+    
+
+
+
     void OnCollisionEnter()
     {
         if(grapping)
