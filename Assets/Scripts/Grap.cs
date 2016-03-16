@@ -20,6 +20,8 @@ public class Grap : MonoBehaviour
     //lighting bolt
     LightningBoltPathScript lbp;
 
+    ParticleSystem particle;
+
     // Use this for initialization
     void Start()
     {
@@ -35,7 +37,7 @@ public class Grap : MonoBehaviour
         lbp.LightningPath.List[0] = transform.gameObject;
 
         Lmanag.transform.parent = null;
-
+        particle = transform.GetChild(0).GetChild(0).GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -54,7 +56,10 @@ public class Grap : MonoBehaviour
                     hitpoint = new GameObject();
                     hitpoint.transform.position = hit.point;
                     lbp.LightningPath.List[1] = hitpoint;
-                    
+
+                    particle.Emit(4);
+
+                    print(particle.name);
                 }
             }
         }

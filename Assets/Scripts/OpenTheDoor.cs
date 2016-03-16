@@ -7,6 +7,7 @@ public class OpenTheDoor : NetworkBehaviour {
     public int rate;
     Vector3 Lstart;
     Vector3 Rstart;
+    private bool opened = false;
     void Start()
     {
         Lstart = transform.GetChild(0).localPosition;
@@ -15,7 +16,10 @@ public class OpenTheDoor : NetworkBehaviour {
     [ClientRpc]
     void RpcOpen()
     {
-        StartCoroutine(mycor2());
+        if (!opened)
+        {
+            StartCoroutine(mycor2());
+        }
     }
 
 
@@ -30,6 +34,7 @@ public class OpenTheDoor : NetworkBehaviour {
         float i = 0;
         GameObject left = transform.GetChild(0).gameObject;
         GameObject right = transform.GetChild(1).gameObject;
+        opened = true;
         while(i<1)
         {
             left.transform.localPosition = Vector3.Lerp(Lstart, new Vector3(4.28f,0.83f,0.9f), i);
