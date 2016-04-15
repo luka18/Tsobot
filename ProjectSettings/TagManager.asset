@@ -11,6 +11,9 @@ TagManager:
   - Grappable
   - UI
   - LocalP
+  - GetSetting
+  - NetworkManager
+  - Single
   layers:
   - Default
   - TransparentFX

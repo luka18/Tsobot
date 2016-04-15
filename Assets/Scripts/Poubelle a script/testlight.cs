@@ -3,11 +3,14 @@ using System.Collections;
 
 public class testlight : MonoBehaviour {
 
+
+
 	// Update is called once per frame
 	void Update () {
-        if(Input.GetButtonDown("Sprint"))
+        if(Input.GetButtonDown("Jump"))
         {
             CallLight();
+            print("called");
         }
 
 	
@@ -20,15 +23,15 @@ public class testlight : MonoBehaviour {
         float duration = 0.25f;
         float delay = 0.0f;
         int seed = 1539394787;
-        System.Random r = new System.Random(seed);
-        Vector3 start = new Vector3(0, 4f, 0f);
-        Vector3 end = new Vector3(0f, 0f,0f);
+        System.Random r = new System.Random();
+        Vector3 start = new Vector3(-3.5f, 2, 0);
+        Vector3 end = new Vector3(3.5f, 2, 0);
         int generations = 6;
-        float chaosFactor = 0.2f;
-        float trunkWidth = 5f;
-        float glowIntensity = 0f;
-        float glowWidthMultiplier = 0f;
-        float forkedness = 0.5f;
+        float chaosFactor = 0.075f;
+        float trunkWidth = 0.05f;
+        float glowIntensity = 0.1f;
+        float glowWidthMultiplier = 4f;
+        float forkedness = 0.3f;
         float singleDuration = Mathf.Max(1.0f / 30.0f, (duration / (float)count));
         float fadePercent = 0.1587301f;
         float growthMultiplier = 0f;
