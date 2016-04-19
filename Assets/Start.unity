@@ -3737,7 +3737,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0165692cbf28a2545980e24b5d2334c8, type: 3}
-  m_RootGameObject: {fileID: 1994721805}
   m_IsPrefabParent: 0
 --- !u!1 &926853746
 GameObject:
@@ -7615,8 +7614,10 @@ MonoBehaviour:
   speed: 5
   sprintspeed: 10
   JumpHeight: 20
+  aircontrol: 2
   maxSlope: 65
-  ButtonList: []
+  ht: {fileID: 0}
+  animate: {fileID: 0}
 --- !u!65 &2049648563
 BoxCollider:
   m_ObjectHideFlags: 0

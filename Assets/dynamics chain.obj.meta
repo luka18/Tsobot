@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: fcddae764b5573a43895515cef990a7c
+timeCreated: 1460995272
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Oggetto_Clona_Simmetria_0_Toroide11
+    100004: Oggetto_Clona_Simmetria_10_Toroide10
+    100006: Oggetto_Clona_Simmetria_11_Toroide12
+    100008: Oggetto_Clona_Simmetria_12_Toroide1
+    100010: Oggetto_Clona_Simmetria_1_Toroide7
+    100012: Oggetto_Clona_Simmetria_2_Toroide5
+    100014: Oggetto_Clona_Simmetria_3_Toroide9
+    100016: Oggetto_Clona_Simmetria_4_Toroide
+    100018: Oggetto_Clona_Simmetria_5_Toroide2
+    100020: Oggetto_Clona_Simmetria_6_Toroide3
+    100022: Oggetto_Clona_Simmetria_7_Toroide4
+    100024: Oggetto_Clona_Simmetria_8_Toroide6
+    100026: Oggetto_Clona_Simmetria_9_Toroide8
+    100028: Toroide13
+    400000: //RootNode
+    400002: Oggetto_Clona_Simmetria_0_Toroide11
+    400004: Oggetto_Clona_Simmetria_10_Toroide10
+    400006: Oggetto_Clona_Simmetria_11_Toroide12
+    400008: Oggetto_Clona_Simmetria_12_Toroide1
+    400010: Oggetto_Clona_Simmetria_1_Toroide7
+    400012: Oggetto_Clona_Simmetria_2_Toroide5
+    400014: Oggetto_Clona_Simmetria_3_Toroide9
+    400016: Oggetto_Clona_Simmetria_4_Toroide
+    400018: Oggetto_Clona_Simmetria_5_Toroide2
+    400020: Oggetto_Clona_Simmetria_6_Toroide3
+    400022: Oggetto_Clona_Simmetria_7_Toroide4
+    400024: Oggetto_Clona_Simmetria_8_Toroide6
+    400026: Oggetto_Clona_Simmetria_9_Toroide8
+    400028: Toroide13
+    2300000: Oggetto_Clona_Simmetria_0_Toroide11
+    2300002: Oggetto_Clona_Simmetria_10_Toroide10
+    2300004: Oggetto_Clona_Simmetria_11_Toroide12
+    2300006: Oggetto_Clona_Simmetria_12_Toroide1
+    2300008: Oggetto_Clona_Simmetria_1_Toroide7
+    2300010: Oggetto_Clona_Simmetria_2_Toroide5
+    2300012: Oggetto_Clona_Simmetria_3_Toroide9
+    2300014: Oggetto_Clona_Simmetria_4_Toroide
+    2300016: Oggetto_Clona_Simmetria_5_Toroide2
+    2300018: Oggetto_Clona_Simmetria_6_Toroide3
+    2300020: Oggetto_Clona_Simmetria_7_Toroide4
+    2300022: Oggetto_Clona_Simmetria_8_Toroide6
+    2300024: Oggetto_Clona_Simmetria_9_Toroide8
+    2300026: Toroide13
+    3300000: Oggetto_Clona_Simmetria_0_Toroide11
+    3300002: Oggetto_Clona_Simmetria_10_Toroide10
+    3300004: Oggetto_Clona_Simmetria_11_Toroide12
+    3300006: Oggetto_Clona_Simmetria_12_Toroide1
+    3300008: Oggetto_Clona_Simmetria_1_Toroide7
+    3300010: Oggetto_Clona_Simmetria_2_Toroide5
+    3300012: Oggetto_Clona_Simmetria_3_Toroide9
+    3300014: Oggetto_Clona_Simmetria_4_Toroide
+    3300016: Oggetto_Clona_Simmetria_5_Toroide2
+    3300018: Oggetto_Clona_Simmetria_6_Toroide3
+    3300020: Oggetto_Clona_Simmetria_7_Toroide4
+    3300022: Oggetto_Clona_Simmetria_8_Toroide6
+    3300024: Oggetto_Clona_Simmetria_9_Toroide8
+    3300026: Toroide13
+    4300000: Oggetto_Clona_Simmetria_0_Toroide11
+    4300002: Oggetto_Clona_Simmetria_10_Toroide10
+    4300004: Oggetto_Clona_Simmetria_11_Toroide12
+    4300006: Oggetto_Clona_Simmetria_12_Toroide1
+    4300008: Oggetto_Clona_Simmetria_1_Toroide7
+    4300010: Oggetto_Clona_Simmetria_2_Toroide5
+    4300012: Oggetto_Clona_Simmetria_3_Toroide9
+    4300014: Oggetto_Clona_Simmetria_4_Toroide
+    4300016: Oggetto_Clona_Simmetria_5_Toroide2
+    4300018: Oggetto_Clona_Simmetria_6_Toroide3
+    4300020: Oggetto_Clona_Simmetria_7_Toroide4
+    4300022: Oggetto_Clona_Simmetria_8_Toroide6
+    4300024: Oggetto_Clona_Simmetria_9_Toroide8
+    4300026: Toroide13
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

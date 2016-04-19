@@ -17,6 +17,8 @@ public class RayCastDetect : NetworkBehaviour {
     private RB2 MyRB2;
     int layermask;
 
+     int salle = 2;
+
     void Start()
     {
         cam = transform.FindChild("Camera");
@@ -166,17 +168,52 @@ public class RayCastDetect : NetworkBehaviour {
         yield return new WaitForSeconds(0.2f);
         car.transform.localPosition = new Vector3(0,3, 0);
     }
-    
 
 
+    //----------------------------------------------------SALLE2--------------------------------
+
+    [ClientRpc]
+    void RpcSound(GameObject obj)
+    {
+        print("obj" + obj.transform.name);
+        obj.GetComponent<PullSound>().PlaysSound();
+    }
+    [ClientRpc]
+    void RpcMelody(GameObject obj)
+    {
+        obj.GetComponent<MasterSound>().PlayTheSound();
+    }
+    [ClientRpc]
+    void RpcOpenDoor(GameObject obj)
+    {
+        obj.GetComponent<OpenTheDoor>().Open();
+        obj.GetComponent<PlaySound>().PlayAud();
+    }
+
+    [Command]
+    void CmdSound(GameObject obj)
+    {
+        print(obj.name);
+        RpcSound(obj);
+    }
+    [Command]
+    void CmdPlayMelody(GameObject obj)
+    {
+        RpcMelody(obj);
+    }
+    [Command]
+    public void CmdOpenDoor(GameObject obj)
+    {
+        RpcOpenDoor(obj);
+    }
 
 
-    
     // Update is called once per frame
     void Update () {
 
         if (Input.GetMouseButtonDown(0))
         {
+            print("here");
             RaycastHit hit;
             Debug.DrawRay(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward * 3, Color.black, 1.5f);
             if (carrying)
@@ -195,73 +232,91 @@ public class RayCastDetect : NetworkBehaviour {
             
             else if ((Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 3.5f,layermask)))
             {
-                if(hit.transform.tag == "Portal")
-                {
-                    animate.CmdCarry(transform.GetComponent<NetworkIdentity>());
-                    ObjCarry = hit.transform.GetComponent<NetworkIdentity>();
-                    CmdCarry(hit.transform.GetComponent<NetworkIdentity>());
-                    MyRB2.Carry = true;
-                    
-                }
-                if (hit.transform.tag == "Button")
-                {
-                    animate.CmdPush(transform.GetComponent<NetworkIdentity>());
-                    switch (hit.transform.name)
+                if(salle == 1)
+                { 
+                    if(hit.transform.tag == "Portal")
                     {
-                        case "1Batton":
-                            CmdBaton(hit.transform.gameObject, 1);
-                            break;
-                        case "2Batton":
-                            CmdBaton(hit.transform.gameObject, 2);
-                            break;
-                        case "3Batton":
-                            CmdBaton(hit.transform.gameObject, 3);
-                            break;
-                        case "Bouton bleu":
-                            CmdPress(hit.transform.gameObject);
-                            CmdDrop(hit.transform.gameObject, 1);
-                            break;
-                        case "Bouton violet":
-                            CmdPress(hit.transform.gameObject);
-                            CmdDrop(hit.transform.gameObject, 2);
-                            break;
-                        case "Bouton vert":
-                            CmdPress(hit.transform.gameObject);
-                            CmdDrop(hit.transform.gameObject, 3);
-                            break;
-                        case "Bouton rouge":
-                            CmdPress(hit.transform.gameObject);
-                            CmdDrop(hit.transform.gameObject, 4);
-                            break;
-                        case "BoutonRed":
-                            //CmdPressOnce(hit.transform.gameObject,3);
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
-                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 3);
-                            break;
-                        case "BoutonBleu":
-                            //hit.transform.GetComponent<ButtonPressedOnce>().press();
-                            //CmdPressOnce(hit.transform.gameObject,1);
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
-                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 1);
-                            break;
-                        case "BoutonVert":
-                            //CmdPressOnce(hit.transform.gameObject,2);// 2 = any time you want 1 = one time
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
-                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 2);
-                            break;
-                        case "BoutonViolet":
-                            //CmdPressOnce(hit.transform.gameObject,0);
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
-                            CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 0);
-                            break;
-                        case "BoutonGreen":
-                            CmdPress(hit.transform.gameObject);
-                            CmdWaves(hit.transform.gameObject);
-                            break;
-                        case "BoutonWaiting":
-                            CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
-                            CmdDoor2(hit.transform.gameObject);
-                            break;
+                        animate.CmdCarry(transform.GetComponent<NetworkIdentity>());
+                        ObjCarry = hit.transform.GetComponent<NetworkIdentity>();
+                        CmdCarry(hit.transform.GetComponent<NetworkIdentity>());
+                        MyRB2.Carry = true;
+                    
+                    }
+                        if (hit.transform.tag == "Button")
+                        {
+                            animate.CmdPush(transform.GetComponent<NetworkIdentity>());
+                            switch (hit.transform.name)
+                            {
+                                case "1Batton":
+                                    CmdBaton(hit.transform.gameObject, 1);
+                                    break;
+                                case "2Batton":
+                                    CmdBaton(hit.transform.gameObject, 2);
+                                    break;
+                                case "3Batton":
+                                    CmdBaton(hit.transform.gameObject, 3);
+                                    break;
+                                case "Bouton bleu":
+                                    CmdPress(hit.transform.gameObject);
+                                    CmdDrop(hit.transform.gameObject, 1);
+                                    break;
+                                case "Bouton violet":
+                                    CmdPress(hit.transform.gameObject);
+                                    CmdDrop(hit.transform.gameObject, 2);
+                                    break;
+                                case "Bouton vert":
+                                    CmdPress(hit.transform.gameObject);
+                                    CmdDrop(hit.transform.gameObject, 3);
+                                    break;
+                                case "Bouton rouge":
+                                    CmdPress(hit.transform.gameObject);
+                                    CmdDrop(hit.transform.gameObject, 4);
+                                    break;
+                                case "BoutonRed":
+                                    //CmdPressOnce(hit.transform.gameObject,3);
+                                    CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                                    CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 3);
+                                    break;
+                                case "BoutonBleu":
+                                    //hit.transform.GetComponent<ButtonPressedOnce>().press();
+                                    //CmdPressOnce(hit.transform.gameObject,1);
+                                    CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                                    CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 1);
+                                    break;
+                                case "BoutonVert":
+                                    //CmdPressOnce(hit.transform.gameObject,2);// 2 = any time you want 1 = one time
+                                    CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                                    CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 2);
+                                    break;
+                                case "BoutonViolet":
+                                    //CmdPressOnce(hit.transform.gameObject,0);
+                                    CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                                    CmdCallMeCol(hit.transform.GetComponent<NetworkIdentity>(), 0);
+                                    break;
+                                case "BoutonGreen":
+                                    CmdPress(hit.transform.gameObject);
+                                    CmdWaves(hit.transform.gameObject);
+                                    break;
+                                case "BoutonWaiting":
+                                    CmdPressOnce(hit.transform.GetComponent<NetworkIdentity>());
+                                    CmdDoor2(hit.transform.gameObject);
+                                    break;
+                            }
+                        }
+                }
+                else if(salle == 2)
+                {
+                    print("salle2");
+                    if(hit.transform.tag =="Portal")
+                    {
+                        print("NAME"+hit.transform.name);
+                        CmdSound(hit.transform.gameObject);
+                    }
+                    if(hit.transform.tag == "GetSetting")
+                    {
+                        print("workedbut");
+                        CmdPlayMelody(hit.transform.gameObject);
+
                     }
                 }
 

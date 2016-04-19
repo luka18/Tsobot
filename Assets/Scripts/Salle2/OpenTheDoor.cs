@@ -7,6 +7,9 @@ public class OpenTheDoor : NetworkBehaviour {
     public int rate;
     Vector3 Lstart;
     Vector3 Rstart;
+    [SerializeField] Vector3 LEnd;
+    [SerializeField]
+    Vector3 REnd;
     private bool opened = false;
     void Start()
     {
@@ -26,15 +29,17 @@ public class OpenTheDoor : NetworkBehaviour {
 
     IEnumerator mycor2()
     {
+        print("startcor");
         float i = 0;
         GameObject left = transform.GetChild(0).gameObject;
         GameObject right = transform.GetChild(1).gameObject;
         opened = true;
         while(i<1)
         {
-            left.transform.localPosition = Vector3.Lerp(Lstart, new Vector3(4.28f,0.83f,0.9f), i);
-            right.transform.localPosition = Vector3.Lerp(Rstart, new Vector3(-4.28f, 0.83f, 0.9f), i);
-            i += Time.deltaTime;
+            print("stuff"+left.transform.localPosition);
+            left.transform.localPosition = Vector3.Lerp(Lstart, LEnd, i);
+            right.transform.localPosition = Vector3.Lerp(Rstart, REnd, i);
+            i += Time.deltaTime*1/rate;
             yield return null;
         }
 
@@ -46,12 +51,12 @@ public class OpenTheDoor : NetworkBehaviour {
         GameObject right = transform.GetChild(1).gameObject;
         Vector3 LStart = left.transform.position;
         Vector3 RStart = right.transform.position;
-        opened = true;
+        opened = false;
         while (i < 1)
         {
             left.transform.localPosition = Vector3.Lerp(LStart, Lstart, i);
             right.transform.localPosition = Vector3.Lerp(RStart, Rstart, i);
-            i += Time.deltaTime;
+            i += Time.deltaTime*1/rate;
             yield return null;
         }
     }
