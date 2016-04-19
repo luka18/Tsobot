@@ -17,6 +17,8 @@ public class RayCastDetect : NetworkBehaviour {
     private RB2 MyRB2;
     int layermask;
 
+    string lasttag;
+
      int salle = 2;
 
     void Start()
@@ -62,14 +64,14 @@ public class RayCastDetect : NetworkBehaviour {
         obj.GetComponent<StartWaves>().go();
     }
     [ClientRpc]
-    void RpcCarry(NetworkIdentity obj)
+    void RpcCarry(NetworkIdentity obj,Vector3 i)
     {
-        Carry(obj);
+        Carry(obj, i);
     }
     [ClientRpc]
-    void RpcUnCarry(NetworkIdentity obj)
+    void RpcUnCarry(NetworkIdentity obj,string s,int force)
     {
-        UnCarry(obj);
+        UnCarry(obj,s,force);
     }
     [ClientRpc]
     void RpcDoor2(GameObject obj)
@@ -120,55 +122,61 @@ public class RayCastDetect : NetworkBehaviour {
         RpcWaves(obj);
     }
     [Command]
-    void CmdCarry(NetworkIdentity obj)
+    void CmdCarry(NetworkIdentity obj,Vector3 i)
     {
-        RpcCarry(obj);
+        RpcCarry(obj,i);
     }
     [Command]
-    void CmdUnCarry(NetworkIdentity obj )
+    void CmdUnCarry(NetworkIdentity obj, string s, int force)
     {
-       
-        RpcUnCarry(obj);
+
+        RpcUnCarry(obj,s,force);
     }
 
 
 
     //-----------------NO NETWORK FROM HERE-------------------
 
-    void UnCarry(NetworkIdentity NetID)
+    void UnCarry(NetworkIdentity NetID,string s,int force)
     {
         GameObject car = NetID.gameObject;
-        
         car.GetComponent<NetworkTransform>().enabled = true;
         car.transform.localPosition = new Vector3(0, 2, 2f);
         car.transform.parent = null;
-        car.GetComponent<Rigidbody>().isKinematic = false;
+        Rigidbody carbody = car.GetComponent<Rigidbody>();
+        carbody.isKinematic = false;
         car.transform.rotation = rot;
-        carrying = false;
-        car.transform.tag = "Portal";
+        if(force != 0)
+        {
+            carbody.AddForce(cam.transform.forward * 30 ,ForceMode.VelocityChange);
+            car.GetComponent<RockScript>().InHand = true;
+        }
 
+        carrying = false;
+        car.transform.tag = s;
     }
     
-    void Carry(NetworkIdentity NetID)
+    void Carry(NetworkIdentity NetID,Vector3 i)
     {
-        
+
         GameObject car = NetID.gameObject;
-        car.tag = "Untagged"; 
+        car.tag = "Untagged";
         car.GetComponent<Rigidbody>().isKinematic = true;
         car.transform.SetParent(transform);
         car.GetComponent<NetworkTransform>().enabled = false;
         carrying = true;
         rot = car.transform.rotation;
-        StartCoroutine(mycor2(car,1));
+
+        car.transform.localPosition = i;
     }
     //Animation Carry
-    IEnumerator mycor2(GameObject car, float i)
+    /*IEnumerator mycor2(GameObject car, float i)
     {
 
         yield return new WaitForSeconds(0.2f);
-        car.transform.localPosition = new Vector3(0,3, 0);
+        car.transform.localPosition = i;
     }
-
+    */
 
     //----------------------------------------------------SALLE2--------------------------------
 
@@ -221,8 +229,8 @@ public class RayCastDetect : NetworkBehaviour {
                 Debug.DrawRay(transform.position , transform.forward, Color.black, 1.0f);
                 if (!Physics.Raycast(transform.position+new Vector3(0,1,0), transform.forward, out hit, 3.0f))
                 {
-
-                    CmdUnCarry(ObjCarry);
+                    
+                    CmdUnCarry(ObjCarry,lasttag,1);
                     MyRB2.Carry = false;
                     animate.CmdUnCarry(transform.GetComponent<NetworkIdentity>());
                 }
@@ -236,9 +244,10 @@ public class RayCastDetect : NetworkBehaviour {
                 { 
                     if(hit.transform.tag == "Portal")
                     {
+                        lasttag = "Portal";
                         animate.CmdCarry(transform.GetComponent<NetworkIdentity>());
                         ObjCarry = hit.transform.GetComponent<NetworkIdentity>();
-                        CmdCarry(hit.transform.GetComponent<NetworkIdentity>());
+                        CmdCarry(hit.transform.GetComponent<NetworkIdentity>(), new Vector3(0,3,0));
                         MyRB2.Carry = true;
                     
                     }
@@ -316,7 +325,14 @@ public class RayCastDetect : NetworkBehaviour {
                     {
                         print("workedbut");
                         CmdPlayMelody(hit.transform.gameObject);
-
+                    }
+                    if(hit.transform.tag == "Carryable")
+                    {
+                        lasttag = "Carryable";
+                        animate.CmdCarry(transform.GetComponent<NetworkIdentity>());
+                        ObjCarry = hit.transform.GetComponent<NetworkIdentity>();
+                        CmdCarry(hit.transform.GetComponent<NetworkIdentity>(), new Vector3(0,2.5f,0));
+                        MyRB2.Carry = true;
                     }
                 }
 

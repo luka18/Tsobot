@@ -5,12 +5,6 @@ using System.Collections;
 
 public class PlayerCalls : NetworkBehaviour {
 
-    [SerializeField]
-    List<GameObject> ListObj;
-
-    [SerializeField]
-    ArrayList OnLine;
-
 
     [ClientRpc]
     public void RpcCall(GameObject obj)
@@ -24,6 +18,15 @@ public class PlayerCalls : NetworkBehaviour {
     {
         RpcCall(obj);
     }
- 
-
+    
+    [Command]
+    public void CmdKillChain(GameObject obj)
+    {
+        RpcKillChain(obj);
+    }
+    [ClientRpc]
+    void RpcKillChain(GameObject obj)
+    {
+        obj.GetComponent<ChainScript>().Kill();
+    }
 }
