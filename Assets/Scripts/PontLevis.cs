@@ -24,7 +24,16 @@ public class PontLevis : MonoBehaviour {
             levelarray[1] = false;
             ToSpawn[0].SetActive(true);
             ToSpawn[1].SetActive(true);
-            TurnOn();
+            StartCoroutine(TurnOn());
+        }
+        if(levelarray[2] &&levelarray[3])
+        {
+            levelarray[2] = false;
+            levelarray[3] = false;
+            ToSpawn[2].SetActive(true);
+            ToSpawn[3].SetActive(true);
+            ToSpawn[4].SetActive(true);
+            StartCoroutine(TurnOn());
         }
          
     }

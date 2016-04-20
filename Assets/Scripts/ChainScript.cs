@@ -10,10 +10,27 @@ public class ChainScript : MonoBehaviour {
     [SerializeField]
     int MyNum;
 
+    [SerializeField]
+    bool StartDisabled;
+
     public void Setting(GameObject localp)
     {
         lp = localp.GetComponent<PlayerCalls>();
+        if(StartDisabled)
+        {
+            gameObject.SetActive(false);
+        }
     }
+    void Start()
+    {
+        Animation anim = GetComponent<Animation>();
+        if(anim!= null)
+        {
+            print("animatinglel");
+            anim.Play("Corde");
+        }
+    }
+
 
     public void Kill()
     {

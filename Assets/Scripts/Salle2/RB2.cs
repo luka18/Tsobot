@@ -130,6 +130,7 @@ public class RB2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         Mouselook();
 
         if(!grounded )
@@ -301,6 +302,10 @@ public class RB2 : MonoBehaviour
                     grounded = true;
                 }
             }
+            else
+        {
+            grounded = false;
+        }
         }
 
     void OnCollisionExit()
