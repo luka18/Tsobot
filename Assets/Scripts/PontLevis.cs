@@ -9,28 +9,24 @@ public class PontLevis : MonoBehaviour {
     GameObject[] ToSpawn;
 
     AudioSource aud;
-    [SerializeField]
-    AudioClip[] clipaud;
 
     AudioSource aud2;
 
+    [SerializeField]
+    AudioClip slame;
+
 	// Use this for initialization
 	void Start () {
-        levelarray = new bool[] { false, false, false, false,false,false,false, false, false, false };
+        levelarray = new bool[] { false, false, false, false,false,false,false, false,false, false };
         aud = GetComponent<AudioSource>();
-        aud = GetComponentInChildren<AudioSource>();
+        aud2 = transform.GetChild(1).GetComponent<AudioSource>();
+        
 	}
 	
 
     public void GetTouched(int i)
     {
-        int a = Random.Range(0, 2);
-        if (a == 0)
-            aud2.clip = clipaud[0];
-        else
-            aud2.clip = clipaud[1];
         aud2.Play();
-        
         levelarray[i] = true;
         if(levelarray[0] && levelarray[1])
         {
@@ -84,6 +80,8 @@ public class PontLevis : MonoBehaviour {
     }
     IEnumerator GoDownOnceForAll()
     {
+        aud.clip = slame;
+        aud.Play();
         float i = 0;
         Vector3 start = transform.rotation.eulerAngles;
         Vector3 end = new Vector3(start.x, start.y, 90);

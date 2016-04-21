@@ -76,8 +76,9 @@ public class Grap : NetworkBehaviour
                 }
             }
         }
-        if (Input.GetButtonUp("Grab") || collision)
+        if (Input.GetKeyUp(InGrap) || collision)
         {
+            print("relache");
             rb2.SetControl(true);
             grapping = false;
             collision = false;

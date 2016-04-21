@@ -60821,7 +60821,7 @@ MonoBehaviour:
   - {fileID: 713301933}
   - {fileID: 1981196900}
   - {fileID: 1222429323}
-  clipaud: []
+  slame: {fileID: 8300000, guid: 64884745f9e228940b20b32ca3f53e56, type: 3}
 --- !u!82 &1345966611
 AudioSource:
   m_ObjectHideFlags: 0
@@ -102675,7 +102675,7 @@ GameObject:
   - 4: {fileID: 2089013547}
   - 82: {fileID: 2089013548}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Aud2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102702,8 +102702,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 8c68982ff4bf67449a40882c2e703f30, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
