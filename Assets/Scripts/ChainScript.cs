@@ -13,6 +13,8 @@ public class ChainScript : MonoBehaviour {
     [SerializeField]
     bool StartDisabled;
 
+    AudioSource aud;
+
     public void Setting(GameObject localp)
     {
         lp = localp.GetComponent<PlayerCalls>();
@@ -21,16 +23,6 @@ public class ChainScript : MonoBehaviour {
             gameObject.SetActive(false);
         }
     }
-    void Start()
-    {
-        Animation anim = GetComponent<Animation>();
-        if(anim!= null)
-        {
-            print("animatinglel");
-            anim.Play("Corde");
-        }
-    }
-
 
     public void Kill()
     {
@@ -46,7 +38,5 @@ public class ChainScript : MonoBehaviour {
             lp.CmdKillChain(gameObject);
         }
     }
-
-
 
 }

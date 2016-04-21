@@ -28,6 +28,7 @@ public class RayCastDetect : NetworkBehaviour {
         layermask = 1 << 9;
         layermask = ~layermask;
         print("s");
+       
     }
     //------------------------------------------RPC-----------------------------------------
     [ClientRpc]
@@ -197,6 +198,11 @@ public class RayCastDetect : NetworkBehaviour {
         obj.GetComponent<OpenTheDoor>().Open();
         obj.GetComponent<PlaySound>().PlayAud();
     }
+    [ClientRpc]
+    void RpcThrowSound(GameObject obj)
+    {
+        obj.GetComponentInChildren<AudioManager>().Throw();
+    }
 
     [Command]
     void CmdSound(GameObject obj)
@@ -214,6 +220,11 @@ public class RayCastDetect : NetworkBehaviour {
     {
         RpcOpenDoor(obj);
     }
+    [Command]
+    void CmdThrowSound(GameObject obj)
+    {
+        RpcThrowSound(obj);
+    }
 
 
     // Update is called once per frame
@@ -229,7 +240,7 @@ public class RayCastDetect : NetworkBehaviour {
                 Debug.DrawRay(transform.position , transform.forward, Color.black, 1.0f);
                 if (!Physics.Raycast(transform.position+new Vector3(0,1,0), transform.forward, out hit, 3.0f))
                 {
-                    
+                    CmdThrowSound(gameObject);
                     CmdUnCarry(ObjCarry,lasttag,1);
                     MyRB2.Carry = false;
                     animate.CmdUnCarry(transform.GetComponent<NetworkIdentity>());
@@ -333,6 +344,7 @@ public class RayCastDetect : NetworkBehaviour {
                         ObjCarry = hit.transform.GetComponent<NetworkIdentity>();
                         CmdCarry(hit.transform.GetComponent<NetworkIdentity>(), new Vector3(0,2.5f,0));
                         MyRB2.Carry = true;
+                        
                     }
                 }
 
