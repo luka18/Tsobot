@@ -10,6 +10,9 @@ public class OpenTheDoor : NetworkBehaviour {
     [SerializeField] Vector3 LEnd;
     [SerializeField]
     Vector3 REnd;
+
+    [SerializeField]
+    GameObject particule;
     private bool opened = false;
     void Start()
     {
@@ -20,6 +23,11 @@ public class OpenTheDoor : NetworkBehaviour {
     
     public void Open()
     {
+        if(particule !=null)
+        {
+            particule.SetActive(true);
+        }
+            
         if (!opened)
         {
             StartCoroutine(mycor2());

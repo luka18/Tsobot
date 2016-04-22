@@ -18,8 +18,8 @@ public class MasterSound : MonoBehaviour {
     int[] lvl0 = new int[] { 1, 2, 1};
     int[] lvl1 = new int[] { 2, 3, 1, 2 };
     int[] lvl2 = new int[] { 1, 2 , 2, 1, 3 };
-    int[] lvl3 = new int[] { 0 };
-
+    //int[] lvl3 = new int[] { 1, 2 , 0, 3, 2, 1 };
+    int[] lvl3 = new int[] { 1 };
     private bool playing;
     // Use this for initialization
     void Start() {
