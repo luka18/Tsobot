@@ -15,7 +15,7 @@ public class AddForcePlayerMat : MonoBehaviour {
     
     void OnCollisionEnter(Collision col)
     {
-        
+        Debug.DrawRay(transform.position, transform.up,Color.red,4);
         if (col.transform.tag == "Player")
         {
             col.transform.GetComponent<RB2>().SetControl(false);

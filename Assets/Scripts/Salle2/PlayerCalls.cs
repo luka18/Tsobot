@@ -29,4 +29,14 @@ public class PlayerCalls : NetworkBehaviour {
     {
         obj.GetComponent<ChainScript>().Kill();
     }
+    [Command]
+    public void CmdGetTouchedChecker(GameObject obj)
+    {
+        RpcGetTouchedChecker(obj);
+    }
+    [ClientRpc]
+    void RpcGetTouchedChecker(GameObject obj)
+    {
+        obj.GetComponent<MainCastle>().Reset();
+    }
 }
