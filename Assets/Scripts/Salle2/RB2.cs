@@ -36,6 +36,7 @@ public class RB2 : MonoBehaviour
     private BoxCollider box1, box2;
     public int maxSlope = 20;
     private bool cancontrol = true;
+    private bool sprinting;
 
     //CROUCHING
     bool Crouched = false;
@@ -45,12 +46,10 @@ public class RB2 : MonoBehaviour
     //Animation
     [SerializeField]
     Animator2 animate;
-    float TimeToLand = 0.3f;
+    public float TimeToLand = 0.1f;
     private float Timebuff;
     private bool once = true;
     private bool carry;
-  
-
     private NetworkIdentity MyNetID;
 
     private GameObject SettingPan;
@@ -113,7 +112,7 @@ public class RB2 : MonoBehaviour
         Cursor.lockState = CamLock;
         Cursor.visible = false;
         VisionLocked = false;
-        
+        sprinting = false;
 
     }
 
@@ -133,7 +132,7 @@ public class RB2 : MonoBehaviour
        
         Mouselook();
 
-        if(!grounded )
+        /*if(!grounded )
         {
             if (!once)
             {
@@ -147,12 +146,27 @@ public class RB2 : MonoBehaviour
             {
                 if (!carry&& !Crouched)
                 {
-                    //animate.CmdLand(MyNetID);
+                    animate.CmdLand(MyNetID);
                 }
                     once = false;
                 
             }
             
+        }*/
+        if(!grounded)
+        {
+            Timebuff += Time.deltaTime;
+            once = true;
+        }
+        else if(once)
+        {
+            if (Timebuff > TimeToLand && !carry && !Crouched)
+            { 
+                animate.CmdLand(MyNetID);
+                print("TIMEBUGG" + Timebuff);
+            }
+            Timebuff = 0;
+            once = false;
         }
       
 
@@ -166,6 +180,20 @@ public class RB2 : MonoBehaviour
             }
             
         }
+        if ((Input.GetKeyUp(InCrouch)) && Crouched)
+        {
+            print("ok?");
+            if (HeadTtrigger.goup && grounded)
+            {
+                transform.Translate(0, 0.25f, 0);
+                ht.UnCrouchPlease();
+                animate.CmdUnCrouch(MyNetID);
+                speed = 5.0f;
+                Mycollider.size = new Vector3(1, 2.5f, 1);
+                Crouched = false;
+
+            }
+        }
         if (Input.GetKeyDown(InCrouch))
         {
             animate.CmdCrouch(MyNetID);
@@ -178,20 +206,6 @@ public class RB2 : MonoBehaviour
             }
             
         }
-
-        if (!(Input.GetKeyDown(InCrouch)) && Crouched)
-        {
-            if (HeadTtrigger.goup && grounded)
-            {
-                transform.Translate(0, 0.25f, 0);
-                ht.UnCrouchPlease();
-                animate.CmdUnCrouch(MyNetID);
-                speed = 5.0f;
-                Mycollider.size = new Vector3(1, 2.5f, 1);
-                Crouched = false;
-       
-            }
-        }
         if (speed == 10)
         {
             if (horizontal != 0 && vertical>0)
@@ -203,7 +217,7 @@ public class RB2 : MonoBehaviour
             if (grounded && vertical > 0 && horizontal == 0 && !Crouched)
             {
                 speed = sprintspeed;
-                cancontrol = false;
+                sprinting = true;
             }
            
           
@@ -212,7 +226,7 @@ public class RB2 : MonoBehaviour
         {
 
             speed = 5.0f;
-            cancontrol = true;
+            sprinting = false;
            
         }
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -222,15 +236,14 @@ public class RB2 : MonoBehaviour
         }
 
         // les variable à update chaque frame
-
+        
     }
     void FixedUpdate()
     {
-
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
 
-        if (grounded)
+        if (grounded && cancontrol)
         {
             desiredmove = (transform.forward * vertical + transform.right * horizontal) * speed;
             desiredmove = Vector3.ClampMagnitude(desiredmove, speed);
@@ -239,7 +252,7 @@ public class RB2 : MonoBehaviour
 
         }
 
-        else if (cancontrol)
+        else if (cancontrol && !sprinting)
         {
             desiredmove = (transform.forward * vertical + transform.right * horizontal) * speed;
             desiredmove = Vector3.ClampMagnitude(desiredmove, speed);
@@ -294,26 +307,28 @@ public class RB2 : MonoBehaviour
 
     void OnCollisionStay(Collision coll)
         {
-            
+        Debug.DrawRay(coll.contacts[0].point, transform.up, Color.red, 4);
             if(Vector3.Angle(coll.contacts[0].normal,Vector3.up)<maxSlope)
             {
                 if (coll.transform.tag != "NoGrounded")
                 {
                     grounded = true;
+                    cancontrol = true;
+                    print("TOUCHED");
+                
                 }
             }
-            else
-        {
-            grounded = false;
+            
         }
-        }
-
-    void OnCollisionExit()
-    {
-        grounded = false;
-    }
     
-
+    void OnCollisionExit(Collision collisionInfo)
+    {
+        
+        grounded = false;
+          
+    }
+   
+    
 
 
     

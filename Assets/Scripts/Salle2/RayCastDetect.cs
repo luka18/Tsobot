@@ -41,6 +41,7 @@ public class RayCastDetect : NetworkBehaviour {
     {
         GameObject obj = ID.gameObject;
         obj.GetComponent<ButtonPressedOnce>().press();
+        
     }
     [ClientRpc]
     void RpcCallMeCol(NetworkIdentity ID, int num)

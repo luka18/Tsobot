@@ -14,8 +14,10 @@ public class TriggerPlan : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
+        print("I COLLIDED");
         if (collision.transform.tag == "Player")
         {
+            print("WITH A PLAYER");
             if(collision.gameObject == myLp.gameObject)
             {
                 myLp.CmdGetTouchedChecker(maincas);

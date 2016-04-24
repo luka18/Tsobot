@@ -51,6 +51,7 @@ public class MainMenu : MonoBehaviour
     public void getmanag(NetworkManager manag)
     {
         manager = manag;
+        
     }
 
 

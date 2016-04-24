@@ -9,9 +9,35 @@ public class MainCastle : MonoBehaviour {
     GameObject CurrentObj;
     GameObject localp;
 
+    [SerializeField]
+    GameObject boubou;
+
+    [SerializeField]
+    Transform BouRed;
+    [SerializeField]
+    Transform BouBlu;
+    [SerializeField]
+    Transform BouGreen;
+    [SerializeField]
+    Transform BouPurple;
+    [SerializeField]
+    Transform CubeRed;
+    [SerializeField]
+    Transform CubeBlu;
+    [SerializeField]
+    Transform CubeGreen;
+    [SerializeField]
+    Transform CubePurple;
+
     int currentLvl;
     Vector3 casedepart;
     public bool tester;
+
+    Vector3 BottomLeft;
+    Vector3 BottomRight;
+    Vector3 TopLeft;
+    Vector3 TopRight;
+    Vector3 Resetpos;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +45,11 @@ public class MainCastle : MonoBehaviour {
         currentLvl = 0;
         CurrentObj = gameObject;
         StartGame();
+        BottomLeft = new Vector3(-14, 2, -14);
+        BottomRight = new Vector3(14, 2, -14);
+        TopLeft = new Vector3(-14, 2, 14);
+        TopRight = new Vector3(14, 2, 14);
+        Resetpos = new Vector3(0, -5, 0);
 
 	}
     void Setting(GameObject lp)
@@ -79,7 +110,7 @@ public class MainCastle : MonoBehaviour {
     
     public void NextLevel()
     {
-        localp.transform.position = new Vector3(0, 0.2f, 0);
+        localp.transform.position = new Vector3(0, 0.2f+boubou.transform.position.y, 0);
         currentLvl += 1;
         if(currentLvl == 5)
         {
@@ -92,6 +123,7 @@ public class MainCastle : MonoBehaviour {
                 CurrentObj = CurrentObj.transform.GetChild(0).gameObject;
             }
             print("CURRENTLVL" + CurrentObj.name);
+            RedoLevel();
             StartCoroutine(GoUp());
         }
     }
@@ -108,9 +140,40 @@ public class MainCastle : MonoBehaviour {
         while(currentLvl !=0)
         {
             CurrentObj.transform.localPosition = new Vector3(0, 0, 0);
-            
+            print(CurrentObj + "currentobj");
             CurrentObj = CurrentObj.transform.parent.gameObject;
             currentLvl -= 1;
+        }
+    }
+
+    void RedoLevel()
+    {
+
+        switch(currentLvl)
+        {
+            case 1: // REDCUBE THIS TIME
+                BouRed.localPosition = Resetpos;
+                CubeGreen.localPosition = new Vector3(-10, -5, -10);
+                CubeRed.localPosition = new Vector3(BottomLeft.x, 3.2f, BottomLeft.z);
+                BouBlu.localPosition = BottomRight;
+                BouBlu.localEulerAngles = new Vector3(0, 180, 0);
+                BouGreen.localPosition = TopLeft;
+                BouGreen.localEulerAngles = new Vector3(0, 90, 0);
+                BouPurple.localPosition = TopRight;
+                BouPurple.localEulerAngles = new Vector3(0, 135, 0);
+                break;
+
+            case 2:
+                CubeRed.position = new Vector3(-10, -5, 10);
+                BouPurple.localPosition = Resetpos;
+                BouGreen.localPosition = TopRight;
+                BouGreen.localEulerAngles = new Vector3(0, 180, 0);
+                BouBlu.localPosition = BottomLeft;
+                BouBlu.localEulerAngles = new Vector3(0, -90, 0);
+                BouRed.localPosition = BottomRight;
+                BouRed.localPosition = new Vector3(0, 235, 0);
+                CubeBlu.localPosition = new Vector3(TopLeft.x, 3.2f, TopLeft.z);
+                break;
         }
     }
 }

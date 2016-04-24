@@ -7,7 +7,8 @@ public class PlayerSetup : NetworkBehaviour {
     Behaviour[] componentsToDisable;
     [SerializeField]
     GameObject PrefCan;
-    
+
+
     LocalP localp;
 
     Camera sceneCamera;
@@ -15,7 +16,7 @@ public class PlayerSetup : NetworkBehaviour {
 
     void Start()
     {
-        
+ 
         print("s");
         if(!isLocalPlayer)
         {
@@ -29,7 +30,6 @@ public class PlayerSetup : NetworkBehaviour {
         }
         else
         {
-
             GameObject.FindGameObjectWithTag("LocalP").GetComponent<LocalP>().Setlocal(gameObject);
             transform.GetChild(2).gameObject.SetActive(false);
             sceneCamera = Camera.main;

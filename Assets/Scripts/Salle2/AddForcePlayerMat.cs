@@ -20,7 +20,7 @@ public class AddForcePlayerMat : MonoBehaviour {
         {
             col.transform.GetComponent<RB2>().SetControl(false);
             col.rigidbody.velocity = new Vector3(0, 0, 0);
-            col.rigidbody.AddForce((transform.up) * force, ForceMode.VelocityChange);
+            col.rigidbody.AddForce(transform.up*force, ForceMode.VelocityChange);
             if(Sound)
             {
                 aud.Play();
