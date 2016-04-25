@@ -103,9 +103,9 @@ public class Grap : NetworkBehaviour
         if (grapping)
         {
             rb2.SetControl(false);
-            i += Time.deltaTime/10;
+            
             Debug.DrawRay(transform.position, transform.forward, Color.black, 1.0f);
-            rb.AddForce((reelcam * 15 - rb.velocity)*smooth, ForceMode.VelocityChange);
+            rb.AddForce((reelcam * 20 - rb.velocity)*smooth, ForceMode.VelocityChange);
             
            
         }

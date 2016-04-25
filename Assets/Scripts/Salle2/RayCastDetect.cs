@@ -80,6 +80,11 @@ public class RayCastDetect : NetworkBehaviour {
     {
         obj.GetComponent<BoutonToFunc>().Open();
     }
+    [ClientRpc]
+    void RpcOpenOfi(GameObject obj)
+    {
+        //obj.GetComponent<TONSCRIPTPAUL>.NOMDELAFONCTION();
+    }
     // ----------------------------------------------------- COMMAND---------------------------------------------
     [Command]
     void CmdDoor2(GameObject obj)
@@ -131,8 +136,12 @@ public class RayCastDetect : NetworkBehaviour {
     [Command]
     void CmdUnCarry(NetworkIdentity obj, string s, int force)
     {
-
         RpcUnCarry(obj,s,force);
+    }
+    [Command]
+    void CmdOpenOfi(GameObject obj)
+    {
+        RpcOpenOfi(obj);
     }
 
 
@@ -328,6 +337,13 @@ public class RayCastDetect : NetworkBehaviour {
                 else if(salle == 2)
                 {
                     print("salle2");
+                    if(hit.transform.tag == "Button")
+                    {
+                        if(hit.transform.name == "RedDoorBut")
+                        {
+                            CmdOpenOfi(gameObject);
+                        }
+                    }
                     if(hit.transform.tag =="Portal")
                     {
                         print("NAME"+hit.transform.name);
