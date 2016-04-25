@@ -29,7 +29,8 @@ public class RB2 : MonoBehaviour
     private Transform Head;
     private bool VisionLocked;
     private CursorLockMode CamLock;
-    
+
+    private Grap grap;
 
     //GROUNDCHECK
      bool grounded = false;
@@ -113,7 +114,7 @@ public class RB2 : MonoBehaviour
         Cursor.visible = false;
         VisionLocked = false;
         sprinting = false;
-
+        grap = GetComponent<Grap>();
     }
 
     public bool GetControl()
@@ -314,7 +315,7 @@ public class RB2 : MonoBehaviour
                 {
                     grounded = true;
                     cancontrol = true;
-                    print("TOUCHED");
+                    grap.ResetGrap();
                 
                 }
             }
