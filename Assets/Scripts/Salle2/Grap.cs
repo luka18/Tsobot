@@ -60,7 +60,7 @@ public class Grap : NetworkBehaviour
         if (Input.GetKeyDown(InGrap))
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 100,layermask))
+            if (Physics.Raycast(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward, out hit, 35,layermask))
             {
                 if (hit.transform.tag == "Grappable")
                 {
