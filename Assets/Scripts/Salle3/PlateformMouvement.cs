@@ -3,17 +3,19 @@ using System.Collections;
 
 public class PlateformMouvement : MonoBehaviour
 {
-    public Vector3 start;
-    public Vector3 newstart;
-    public Vector3 end;
-    public float i = 0;
-    public float speed = 0.1f;
+    Vector3 start;
+    Vector3 newstart;
+    Vector3 end;
+    float i = 0;
+    float speed2 = 0.1f;
+    public float startx = 18;
+    public float frein = 50;
     // Use this for initialization
     void Start()
     {
         start = transform.position;
         end = transform.position;
-        end.x += 18;
+        end.x += startx;
         i = 0;
     }
 
@@ -21,7 +23,7 @@ public class PlateformMouvement : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp(start, end, i);
-        i = i + (speed / 200);
+        i = i + (speed2 / frein);
         if (i >= 1)
         {
             newstart = end;
