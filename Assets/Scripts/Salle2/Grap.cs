@@ -23,11 +23,14 @@ public class Grap : NetworkBehaviour
 
     KeyCode InGrap = KeyCode.Mouse0;
 
+    [SerializeField]
+    private int NumOfGrap;
+
     //lighting bolt
     LightningBoltPathScript lbp;
 
     ParticleSystem particle;
-
+    float i;
     public KeyCode SGrap
     {
         set { InGrap = value; }
@@ -45,14 +48,18 @@ public class Grap : NetworkBehaviour
         GameObject Lmanag = transform.GetChild(3).gameObject;
         lbp = Lmanag.GetComponent<LightningBoltPathScript>();
         lbp.LightningPath.List[0] = transform.gameObject;
-
+        i = 0.0f;
         //Lmanag.transform.parent = null;
         particle = transform.GetChild(0).GetChild(0).GetComponent<ParticleSystem>();
+        ResetGrap();
 
         //aud = transform.GetChild(3).GetComponent<AudioSource>();
     }
 
-
+    public void ResetGrap()
+    {
+        NumOfGrap = 2;
+    }
 
     // Update is called once per frame
     void Update()
@@ -64,13 +71,18 @@ public class Grap : NetworkBehaviour
             {
                 if (hit.transform.tag == "Grappable")
                 {
-                    Debug.Log(hit.transform.tag);
-                    reelcam = cam.forward;
-                    grapping = true;
-                    hitpoint = new GameObject();
-                    hitpoint.transform.position = hit.point;
-                    lbp.LightningPath.List[1] = hitpoint;
-                    CmdLightning(hit.point);
+                    particle.Emit(4);
+                    if (NumOfGrap > 0)
+                    {
+                        NumOfGrap -= 1;
+                        Debug.Log(hit.transform.tag);
+                        reelcam = cam.forward;
+                        grapping = true;
+                        hitpoint = new GameObject();
+                        hitpoint.transform.position = hit.point;
+                        lbp.LightningPath.List[1] = hitpoint;
+                        CmdLightning(hit.point);
+                    }
                     particle.Emit(4);
                     //aud.Play();
                 }
@@ -79,7 +91,7 @@ public class Grap : NetworkBehaviour
         if (Input.GetKeyUp(InGrap) || collision)
         {
             print("relache");
-            rb2.SetControl(true);
+           
             grapping = false;
             collision = false;
             lbp.LightningPath.List[1] = null;
@@ -91,6 +103,7 @@ public class Grap : NetworkBehaviour
         if (grapping)
         {
             rb2.SetControl(false);
+            i += Time.deltaTime/10;
             Debug.DrawRay(transform.position, transform.forward, Color.black, 1.0f);
             rb.AddForce((reelcam * 15 - rb.velocity)*smooth, ForceMode.VelocityChange);
             
