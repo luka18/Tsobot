@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
 public class AxesMovements : MonoBehaviour {
@@ -6,13 +7,35 @@ public class AxesMovements : MonoBehaviour {
     float i;
     Vector3 startp;
     Vector3 endp;
-    
+    [SerializeField]
+    Vector3 Forcevector;
+    PlayerCalls pc;
+    void Setting(GameObject lp )
+    {
+        pc = lp.GetComponent<PlayerCalls>();
+        pc.CmdWhatI(gameObject);
+        print(i);
+    }
+
 	// Use this for initialization
 	void Start () {
-        startp = transform.eulerAngles;
-        endp = new Vector3(-startp.x, startp.y, startp.z);
+        print("transpo" + transform.eulerAngles);
+        startp = new Vector3(40, 0, 0);
+        endp = new Vector3(-40,0,0);
+        //i = Mathf.InverseLerp(40, 320, transform.eulerAngles.x);
+        //GetComponent<NetworkTransform>().enabled = false;
+        
+       
 	}
-	
+    public float GetI()
+    {
+        return i;
+    }
+    public void SetI(float k)
+    {
+        i = k;
+        print("i've been modified"+i);
+    }
 	// Update is called once per frame
 	void Update () {
 
