@@ -4,7 +4,7 @@ using System.Collections;
 public class OnTrigEnterPlayer : MonoBehaviour
 {
     [SerializeField]
-    Vector3 To;
+    Respawner respawnpoint;
     [SerializeField]
     AudioSource aud;
 
@@ -12,7 +12,8 @@ public class OnTrigEnterPlayer : MonoBehaviour
     {
         if(col.tag =="Player")
         {
-            col.transform.position = To;
+            col.transform.position = respawnpoint.Spawner;
+            print(respawnpoint.Spawner);
             if(aud!=null)
             {
                 aud.Play();

@@ -308,7 +308,7 @@ public class RB2 : MonoBehaviour
 
     void OnCollisionStay(Collision coll)
         {
-        Debug.DrawRay(coll.contacts[0].point, transform.up, Color.red, 4);
+        //Debug.DrawRay(coll.contacts[0].point, transform.up, Color.red, 4);
             if(Vector3.Angle(coll.contacts[0].normal,Vector3.up)<maxSlope)
             {
                 if (coll.transform.tag != "NoGrounded")

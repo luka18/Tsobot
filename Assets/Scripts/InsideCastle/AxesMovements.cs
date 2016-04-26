@@ -42,11 +42,7 @@ public class AxesMovements : NetworkBehaviour {
         {
             StartCoroutine(Waiting());
         }
-        else
-        {
-            GetComponent<NetworkTransform>().transformSyncMode = NetworkTransform.TransformSyncMode.SyncNone;
-            i = Mathf.InverseLerp(40, 320, transform.eulerAngles.x);
-        }
+       
        
 	}
     [ClientRpc]
@@ -73,9 +69,7 @@ public class AxesMovements : NetworkBehaviour {
                 wherewego = endp;
                 wherewend = startp;
             }
-            
             i = i % 1;
-      
             sens = !sens;
             
         }
