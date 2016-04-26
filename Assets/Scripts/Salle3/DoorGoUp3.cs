@@ -4,29 +4,41 @@ using System.Collections;
 public class DoorGoUp3 : MonoBehaviour {
     [SerializeField]
     GameObject door;
+    Vector3 startpos;   
+    Vector3 endpos;      
+    float speed = 0.5F;
 
-
-	public void GoScript()
+    public void GoScript()
     {
         print("Pushed");
         StartCoroutine(GoUp()); // GO Up est appelé quand le bouton est appuyé
     }
     IEnumerator GoUp()
     {
-        /*while(condition)
+         float i = 0;                
+        while (i <= 1)
         {
-        ---------CODE
-        ca fais comme une boucle ou comme une update si tu veux.
-
-        Il faut que la porte monte puis reste un peu de temps et
-        redescende il faut aussi qu'on puisse pas appuyé tant que la coroutine est pas terimé
-        au niveau du temps d'ouverture tu fait en sorte qu'on puisse rentré que quand on a appuyé
-        pendant le trajet allez salut
-
-        --------CODE
-        yield return null // laisse ca en bas du while
-        }*/
-        yield return null; //a enlevé quand ta finis la fonc
+            door.transform.position = Vector3.Lerp(startpos, endpos, i);           
+            i +=Time.deltaTime * speed;            
+            yield return null;            
+        }        
+        yield return new WaitForSeconds(3);
+        print(i);
+        i = 0;               
+        while (i <= 1)
+        {            
+            door.transform.position = Vector3.Lerp(endpos, startpos, i);
+            i +=Time.deltaTime*speed;            
+            yield return null;              
+                 
+        }
     }
+    void Start()
+    {
+        startpos = door.transform.position;
+        endpos = new Vector3(startpos.x, startpos.y + 8, startpos.z);
 
+    }
 }
+
+      
