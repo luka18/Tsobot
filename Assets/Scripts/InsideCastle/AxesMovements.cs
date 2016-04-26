@@ -2,54 +2,84 @@
 using UnityEngine.Networking;
 using System.Collections;
 
-public class AxesMovements : MonoBehaviour {
+
+public class AxesMovements : NetworkBehaviour {
 
     float i;
     Vector3 startp;
     Vector3 endp;
     [SerializeField]
     Vector3 Forcevector;
-    PlayerCalls pc;
-    void Setting(GameObject lp )
-    {
-        pc = lp.GetComponent<PlayerCalls>();
-        pc.CmdWhatI(gameObject);
-        print(i);
-    }
+
+    Vector3 wherewego;
+    Vector3 wherewend;
+
+    bool sens;
 
 	// Use this for initialization
 	void Start () {
         print("transpo" + transform.eulerAngles);
-        startp = new Vector3(40, 0, 0);
+        startp = new Vector3(40, 0, 0); // POSITIF TO NEGATIF SENS = TRUE
         endp = new Vector3(-40,0,0);
-        //i = Mathf.InverseLerp(40, 320, transform.eulerAngles.x);
-        //GetComponent<NetworkTransform>().enabled = false;
+        sens = false;
+        wherewego = startp;
+        wherewend = endp;
+
         
+        //GetComponent<NetworkTransform>().enabled = false;
+        if (isServer)
+        {
+            StartCoroutine(Waiting());
+        }
+        else
+        {
+            GetComponent<NetworkTransform>().transformSyncMode = NetworkTransform.TransformSyncMode.SyncNone;
+            i = Mathf.InverseLerp(40, 320, transform.eulerAngles.x);
+        }
        
 	}
-    public float GetI()
+    [ClientRpc]
+    void RpcSendIt(float k, bool mdr)
     {
-        return i;
-    }
-    public void SetI(float k)
-    {
+        print("                                      PRE I: "+i);
         i = k;
-        print("i've been modified"+i);
+        sens = mdr;
+        print("POST I: "+i);
     }
 	// Update is called once per frame
 	void Update () {
-
         i += Time.deltaTime;
-        transform.eulerAngles = Vector3.Lerp(startp, endp, Mathf.SmoothStep(0.0f, 1.0f, i));
+        transform.eulerAngles = Vector3.Lerp(wherewego, wherewend, Mathf.SmoothStep(0.0f, 1.0f, i));
         if(i >=1)
         {
-            Vector3 save = startp;
-            startp = endp;
-            endp = save;
-            i = 0;
+            if(sens)
+            {
+                wherewego = startp;
+                wherewend = endp;
+            }
+            else
+            {
+                wherewego = endp;
+                wherewend = startp;
+            }
+            
+            print("i" + i);
+            i = i % 1;
+            print("imod2" + i);
+            print("sens:+" + sens);
+            sens = !sens;
+            
         }
 
     }
-
+    IEnumerator Waiting()
+    {
+        while (true)
+        {
+            RpcSendIt(i,sens);
+            yield return new WaitForSeconds(1);
+            
+        }
+    }
  
 }

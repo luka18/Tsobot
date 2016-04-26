@@ -39,14 +39,5 @@ public class PlayerCalls : NetworkBehaviour {
     {
         obj.GetComponent<MainCastle>().Reset();
     }
-    [Command]
-    public void CmdWhatI(GameObject obj)
-    {
-        RpcWhatI(obj, obj.GetComponent<AxesMovements>().GetI());
-    }
-    [ClientRpc]
-    void RpcWhatI(GameObject obj, float i)
-    {
-        obj.GetComponent<AxesMovements>().SetI(i);
-    }
+
 }
