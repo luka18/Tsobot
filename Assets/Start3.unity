@@ -7775,6 +7775,8 @@ GameObject:
   - 136: {fileID: 2120731001}
   - 23: {fileID: 2120731000}
   - 114: {fileID: 2120731004}
+  - 114: {fileID: 2120731005}
+  - 114: {fileID: 2120731006}
   m_Layer: 0
   m_Name: RedDoorBut
   m_TagString: Button
@@ -7857,3 +7859,47 @@ MonoBehaviour:
   min: 0.05
   timeleft: 5
   axis: 2
+--- !u!114 &2120731005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120730999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece5ebe7e0828c74fb53b6e8a7a5b81a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+--- !u!114 &2120731006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120730999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
