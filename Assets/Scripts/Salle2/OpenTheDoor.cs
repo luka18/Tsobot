@@ -37,14 +37,14 @@ public class OpenTheDoor : NetworkBehaviour {
 
     IEnumerator mycor2()
     {
-        print("startcor");
+        
         float i = 0;
         GameObject left = transform.GetChild(0).gameObject;
         GameObject right = transform.GetChild(1).gameObject;
         opened = true;
         while(i<1)
         {
-            print("stuff"+left.transform.localPosition);
+            
             left.transform.localPosition = Vector3.Lerp(Lstart, LEnd, i);
             right.transform.localPosition = Vector3.Lerp(Rstart, REnd, i);
             i += Time.deltaTime*1/rate;

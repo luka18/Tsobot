@@ -83,7 +83,9 @@ public class RayCastDetect : NetworkBehaviour {
     [ClientRpc]
     void RpcOpenOfi(GameObject obj)
     {
-        //obj.GetComponent<TONSCRIPTPAUL>.NOMDELAFONCTION();
+        obj.GetComponent<DoorGoUp3>().GoScript();
+        obj.GetComponent<ButtonPressed>().press();
+        
     }
     // ----------------------------------------------------- COMMAND---------------------------------------------
     [Command]
@@ -341,7 +343,7 @@ public class RayCastDetect : NetworkBehaviour {
                     {
                         if(hit.transform.name == "RedDoorBut")
                         {
-                            CmdOpenOfi(gameObject);
+                            CmdOpenOfi(hit.transform.gameObject);
                         }
                     }
                     if(hit.transform.tag =="Portal")
