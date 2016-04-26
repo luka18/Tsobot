@@ -13,17 +13,28 @@ public class AxesMovements : NetworkBehaviour {
 
     Vector3 wherewego;
     Vector3 wherewend;
-
+    [SerializeField]
+    float speed;
+    [SerializeField]
     bool sens;
+    [SerializeField]
+    int angle;
 
 	// Use this for initialization
 	void Start () {
-        print("transpo" + transform.eulerAngles);
-        startp = new Vector3(40, 0, 0); // POSITIF TO NEGATIF SENS = TRUE
-        endp = new Vector3(-40,0,0);
-        sens = false;
-        wherewego = startp;
-        wherewend = endp;
+    
+        startp = new Vector3(angle, 0, 0); // POSITIF TO NEGATIF SENS = TRUE
+        endp = new Vector3(-angle,0,0);
+        if (sens)
+        {
+            wherewego = endp;
+            wherewend = startp;
+        }
+        else
+        {
+            wherewego = startp;
+            wherewend = endp;
+        }
 
         
         //GetComponent<NetworkTransform>().enabled = false;
@@ -41,14 +52,14 @@ public class AxesMovements : NetworkBehaviour {
     [ClientRpc]
     void RpcSendIt(float k, bool mdr)
     {
-        print("                                      PRE I: "+i);
+       
         i = k;
         sens = mdr;
-        print("POST I: "+i);
+        
     }
 	// Update is called once per frame
 	void Update () {
-        i += Time.deltaTime;
+        i += Time.deltaTime*speed;
         transform.eulerAngles = Vector3.Lerp(wherewego, wherewend, Mathf.SmoothStep(0.0f, 1.0f, i));
         if(i >=1)
         {
@@ -63,10 +74,8 @@ public class AxesMovements : NetworkBehaviour {
                 wherewend = startp;
             }
             
-            print("i" + i);
             i = i % 1;
-            print("imod2" + i);
-            print("sens:+" + sens);
+      
             sens = !sens;
             
         }
