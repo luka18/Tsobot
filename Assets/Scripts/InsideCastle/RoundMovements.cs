@@ -19,17 +19,16 @@ public class RoundMovements : NetworkBehaviour {
 
         if (sens)
         {
-            startp = new Vector3(0, 0, 0); // POSITIF TO NEGATIF SENS = TRUE
-            endp = new Vector3(0, 360, 0);
+            startp = transform.eulerAngles; 
+            endp = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y+ 360,transform.localEulerAngles.z);
         }
         else
         {
-            endp = new Vector3(0, 0, 0); // POSITIF TO NEGATIF SENS = TRUE
-            startp = new Vector3(0, 360, 0);
+            endp = transform.eulerAngles; 
+            startp = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + 360, transform.localEulerAngles.z);
         }
 
 
-        //GetComponent<NetworkTransform>().enabled = false;
         if (isServer)
         {
             StartCoroutine(Waiting());
