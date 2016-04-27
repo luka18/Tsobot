@@ -39,11 +39,10 @@ public class RoundMovements : NetworkBehaviour
 
     }
     [ClientRpc]
-    void RpcSendIt(float k, bool mdr)
+    void RpcSendIt(float k)
     {
 
         i = k;
-        sens = mdr;
 
     }
     // Update is called once per frame
@@ -56,7 +55,6 @@ public class RoundMovements : NetworkBehaviour
         if (i >= 1)
         {
             i = i % 1;
-            sens = !sens;
         }
 
     }
@@ -64,7 +62,7 @@ public class RoundMovements : NetworkBehaviour
     {
         while (true)
         {
-            RpcSendIt(i, sens);
+            RpcSendIt(i);
             yield return new WaitForSeconds(1);
 
         }

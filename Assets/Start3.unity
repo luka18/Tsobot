@@ -401,8 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c607f0bcb7fcfa40b867ea307f1ff63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 360, y: 0, z: 0}
-  speed: 1
+  Rotation: {x: 360, y: 0, z: 0}
+  speed: 0.3
   sens: 0
 --- !u!114 &129497289
 MonoBehaviour:
@@ -436,6 +436,18 @@ MonoBehaviour:
     i15: 54
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!65 &129497290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129497287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015, y: 0.11, z: 0.1}
+  m_Center: {x: 0, y: 0.005, z: 0}
 --- !u!114 &129497292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,6 +460,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {x: 128, y: -66, z: 287}
+--- !u!65 &129497293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129497287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015, y: 0.13, z: 0.33}
+  m_Center: {x: 0, y: -0.115, z: 0}
+--- !u!65 &129497294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129497287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015, y: 0.14, z: 0.33}
+  m_Center: {x: 0, y: 0.13, z: 0}
 --- !u!1 &136024991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,7 +2713,8 @@ Prefab:
       propertyPath: m_LocalRotation.z
       value: 0.7071068
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 5a72c0372a2706e46a2719ed7b3d6736, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 5a72c0372a2706e46a2719ed7b3d6736, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &446318761
@@ -4891,6 +4928,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
