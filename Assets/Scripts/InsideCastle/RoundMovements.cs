@@ -19,6 +19,7 @@ public class RoundMovements : NetworkBehaviour {
     {
 
         {
+<<<<<<< HEAD
 
             if (sens)
             {
@@ -38,6 +39,21 @@ public class RoundMovements : NetworkBehaviour {
             }
 
 
+=======
+            startp = transform.eulerAngles; 
+            endp = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y+ 360,transform.localEulerAngles.z);
+        }
+        else
+        {
+            endp = transform.eulerAngles; 
+            startp = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + 360, transform.localEulerAngles.z);
+        }
+
+
+        if (isServer)
+        {
+            StartCoroutine(Waiting());
+>>>>>>> origin/master
         }
 
 

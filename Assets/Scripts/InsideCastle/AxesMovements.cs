@@ -8,8 +8,6 @@ public class AxesMovements : NetworkBehaviour {
     float i;
     Vector3 startp;
     Vector3 endp;
-    [SerializeField]
-    Vector3 Forcevector;
 
     Vector3 wherewego;
     Vector3 wherewend;
