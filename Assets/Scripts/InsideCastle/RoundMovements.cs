@@ -7,6 +7,7 @@ public class RoundMovements : NetworkBehaviour {
     float i;
     Vector3 startp;
     Vector3 endp;
+    public Vector3 rotation;
 
     [SerializeField]
     float speed;
@@ -17,23 +18,28 @@ public class RoundMovements : NetworkBehaviour {
     void Start()
     {
 
-        if (sens)
         {
-            startp = new Vector3(0, 0, 0); // POSITIF TO NEGATIF SENS = TRUE
-            endp = new Vector3(0, 360, 0);
-        }
-        else
-        {
-            endp = new Vector3(0, 0, 0); // POSITIF TO NEGATIF SENS = TRUE
-            startp = new Vector3(0, 360, 0);
-        }
+
+            if (sens)
+            {
+                startp = transform.eulerAngles;
+                endp = new Vector3(transform.eulerAngles.x + rotation.x, transform.eulerAngles.y + rotation.y, transform.localEulerAngles.z + rotation.z);
+            }
+            else
+            {
+                endp = transform.eulerAngles;
+                startp = new Vector3(transform.eulerAngles.x + rotation.x, transform.eulerAngles.y + rotation.y, transform.localEulerAngles.z + rotation.z);
+            }
 
 
-        //GetComponent<NetworkTransform>().enabled = false;
-        if (isServer)
-        {
-            StartCoroutine(Waiting());
+            if (isServer)
+            {
+                StartCoroutine(Waiting());
+            }
+
+
         }
+
 
 
     }
