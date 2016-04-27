@@ -2,12 +2,13 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class RoundMovements : NetworkBehaviour {
+public class RoundMovements : NetworkBehaviour
+{
 
     float i;
     Vector3 startp;
     Vector3 endp;
-    public Vector3 rotation;
+    public Vector3 Rotation;
 
     [SerializeField]
     float speed;
@@ -18,44 +19,22 @@ public class RoundMovements : NetworkBehaviour {
     void Start()
     {
 
+        if (sens)
         {
-<<<<<<< HEAD
-
-            if (sens)
-            {
-                startp = transform.eulerAngles;
-                endp = new Vector3(transform.eulerAngles.x + rotation.x, transform.eulerAngles.y + rotation.y, transform.localEulerAngles.z + rotation.z);
-            }
-            else
-            {
-                endp = transform.eulerAngles;
-                startp = new Vector3(transform.eulerAngles.x + rotation.x, transform.eulerAngles.y + rotation.y, transform.localEulerAngles.z + rotation.z);
-            }
-
-
-            if (isServer)
-            {
-                StartCoroutine(Waiting());
-            }
-
-
-=======
-            startp = transform.eulerAngles; 
-            endp = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y+ 360,transform.localEulerAngles.z);
+            startp = transform.eulerAngles;
+            endp = new Vector3(transform.eulerAngles.x + Rotation.x, transform.eulerAngles.y + Rotation.y, transform.localEulerAngles.z + Rotation.z);
         }
         else
         {
-            endp = transform.eulerAngles; 
-            startp = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + 360, transform.localEulerAngles.z);
+            endp = transform.eulerAngles;
+            startp = new Vector3(transform.eulerAngles.x + Rotation.x, transform.eulerAngles.y + Rotation.y, transform.localEulerAngles.z + Rotation.z);
         }
 
 
         if (isServer)
         {
             StartCoroutine(Waiting());
->>>>>>> origin/master
         }
-
 
 
     }
@@ -72,7 +51,7 @@ public class RoundMovements : NetworkBehaviour {
     {
         i += Time.deltaTime * speed;
         transform.eulerAngles = Vector3.Lerp(startp, endp, i);
-        
+
 
         if (i >= 1)
         {
@@ -91,3 +70,5 @@ public class RoundMovements : NetworkBehaviour {
         }
     }
 }
+
+
