@@ -28,9 +28,8 @@ public class TriggerForceForward : MonoBehaviour {
             {
                 aud.Play();
             }
+            
         }
-    }
-
-
+    }   
 
 }
