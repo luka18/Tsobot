@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Menu.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Start2.unity
   - enabled: 0
     path: Assets/Start3.unity
@@ -15,5 +15,5 @@ EditorBuildSettings:
     path: Assets/Nature.unity
   - enabled: 0
     path: Assets/InsideCastle.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/InsideCastle2.unity

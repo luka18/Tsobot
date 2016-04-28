@@ -122,10 +122,7 @@ public class MainMainMenu : MonoBehaviour {
         }
 
     }
-    void Update()
-    {
-        print("seeeet" + set);
-    }
+
 
     public void Multiplayer()
     {
