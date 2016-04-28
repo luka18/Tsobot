@@ -22,6 +22,7 @@ public class AddForceTop : MonoBehaviour {
         if(col.transform.tag =="Player")
         {
             Rigidbody lol= col.transform.GetComponent<Rigidbody>();
+            col.transform.GetComponent<RB2>().SetControl(false);
             lol.AddForce(tosend * force, ForceMode.VelocityChange);
         }
     }
