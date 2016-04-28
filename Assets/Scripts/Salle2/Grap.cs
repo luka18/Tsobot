@@ -61,6 +61,10 @@ public class Grap : NetworkBehaviour
         NumOfGrap = 2;
     }
 
+    public void AddGrap(int i)
+    {
+        NumOfGrap += 1;
+    }
     // Update is called once per frame
     void Update()
     {

@@ -2906,8 +2906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ddb0383140c074caae40fe4625d7e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 50
-  Sound: 0
+  force: 65
+  Sound: 1
 --- !u!65 &431382250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4940,7 +4940,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.59
+      value: -30.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4968,15 +4968,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalScale.x
-      value: 79.06325
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalScale.y
-      value: 79.06314
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
       propertyPath: m_LocalScale.z
-      value: 79.06314
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db00bf250d6560a43980dff6d8fc1455, type: 3}
@@ -8026,7 +8026,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1773260887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 330, y: -20, z: 292}
+  m_LocalPosition: {x: 327.1, y: -20, z: 292}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8101,8 +8101,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1788535080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 484.93, y: -20.38, z: 274.08}
-  m_LocalScale: {x: 12.97044, y: 12.970428, z: 12.970428}
+  m_LocalPosition: {x: 484.93, y: -25.62, z: 274.08}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 84
