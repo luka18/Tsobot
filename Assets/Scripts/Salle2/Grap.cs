@@ -26,6 +26,8 @@ public class Grap : NetworkBehaviour
     [SerializeField]
     private int NumOfGrap;
 
+    NumGrap grapui;
+
     //lighting bolt
     LightningBoltPathScript lbp;
 
@@ -52,6 +54,8 @@ public class Grap : NetworkBehaviour
         //Lmanag.transform.parent = null;
         particle = transform.GetChild(0).GetChild(0).GetComponent<ParticleSystem>();
         ResetGrap();
+        grapui = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<NumGrap>();
+
 
         //aud = transform.GetChild(3).GetComponent<AudioSource>();
     }
@@ -59,11 +63,16 @@ public class Grap : NetworkBehaviour
     public void ResetGrap()
     {
         NumOfGrap = 2;
+        if (grapui != null)
+            grapui.SetNum(NumOfGrap);
     }
 
     public void AddGrap(int i)
     {
         NumOfGrap += 1;
+        if (grapui != null)
+            grapui.SetNum(NumOfGrap);
+
     }
     // Update is called once per frame
     void Update()
@@ -86,6 +95,8 @@ public class Grap : NetworkBehaviour
                         hitpoint.transform.position = hit.point;
                         lbp.LightningPath.List[1] = hitpoint;
                         CmdLightning(hit.point);
+                        if (grapui != null)
+                            grapui.SetNum(NumOfGrap);
                     }
                     particle.Emit(4);
                     //aud.Play();

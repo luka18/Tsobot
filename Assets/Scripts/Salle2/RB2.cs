@@ -313,10 +313,12 @@ public class RB2 : MonoBehaviour
             {
                 if (coll.transform.tag != "NoGrounded")
                 {
+                if (!grounded)
+                {
                     grounded = true;
                     cancontrol = true;
                     grap.ResetGrap();
-                
+                }
                 }
             }
             
