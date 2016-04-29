@@ -215,6 +215,12 @@ public class RayCastDetect : NetworkBehaviour {
     {
         obj.GetComponentInChildren<AudioManager>().Throw();
     }
+    [ClientRpc]
+    void RpcChangeCal(GameObject obj, int i)
+    {
+
+        obj.GetComponent<OnlyLink>().SendMc(i);
+    }
 
     [Command]
     void CmdSound(GameObject obj)
@@ -237,6 +243,11 @@ public class RayCastDetect : NetworkBehaviour {
     {
         RpcThrowSound(obj);
     }
+    [Command]
+    void CmdChangeCal(GameObject obj, int i)
+    {
+        RpcChangeCal(obj, i);
+    }
 
 
     // Update is called once per frame
@@ -244,7 +255,7 @@ public class RayCastDetect : NetworkBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-            print("here");
+      
             RaycastHit hit;
             Debug.DrawRay(transform.position + new Vector3(0, 2.0f, 0), cam.transform.forward * 3, Color.black, 1.5f);
             if (carrying)
@@ -338,12 +349,28 @@ public class RayCastDetect : NetworkBehaviour {
                 }
                 else if(salle == 2)
                 {
-                    print("salle2");
+              
                     if(hit.transform.tag == "Button")
                     {
                         if(hit.transform.name == "RedDoorBut")
                         {
                             CmdOpenOfi(hit.transform.gameObject);
+                        }
+                        if(hit.transform.name == "ButtonLeft")
+                        {
+                            CmdChangeCal(hit.transform.gameObject, 0);
+                        }
+                        if(hit.transform.name== "ButtonRight")
+                        {
+                            CmdChangeCal(hit.transform.gameObject, 1);
+                        }
+                        if (hit.transform.name == "ButtonUp")
+                        {
+                            CmdChangeCal(hit.transform.gameObject, 2);
+                        }
+                        if (hit.transform.name == "ButtonDown")
+                        {
+                            CmdChangeCal(hit.transform.gameObject, 3);
                         }
                     }
                     if(hit.transform.tag =="Portal")

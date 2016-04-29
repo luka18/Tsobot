@@ -107,7 +107,6 @@ public class Grap : NetworkBehaviour
         }
         if (Input.GetKeyUp(InGrap) || collision)
         {
-            print("relache");
            
             grapping = false;
             collision = false;
