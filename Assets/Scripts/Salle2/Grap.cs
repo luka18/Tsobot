@@ -54,7 +54,9 @@ public class Grap : NetworkBehaviour
         //Lmanag.transform.parent = null;
         particle = transform.GetChild(0).GetChild(0).GetComponent<ParticleSystem>();
         ResetGrap();
-        grapui = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<NumGrap>();
+        GameObject lol = GameObject.FindGameObjectWithTag("UI");
+        if(lol != null)
+            grapui = lol.GetComponentInChildren<NumGrap>();
 
 
         //aud = transform.GetChild(3).GetComponent<AudioSource>();
