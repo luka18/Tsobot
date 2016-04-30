@@ -107,8 +107,8 @@ public class RB2 : MonoBehaviour
         Mycollider = GetComponent<BoxCollider>();
         MyNetID = transform.GetComponent<NetworkIdentity>();
 
-        //Transform mdr = GameObject.FindWithTag("UI").transform;
-        //SettingPan = mdr.GetChild(mdr.childCount - 1).gameObject;
+        Transform mdr = GameObject.FindWithTag("UI").transform;
+        SettingPan = mdr.GetChild(mdr.childCount - 1).gameObject;
         CamLock = CursorLockMode.Locked;
         Cursor.lockState = CamLock;
         Cursor.visible = false;

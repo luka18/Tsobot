@@ -39,7 +39,7 @@ public class SwapScene : MonoBehaviour
             print(can.name + "caname0");
             can.GetComponent<Canvas>().enabled = false;
             Destroy(set.gameObject);
-            set = can.GetComponentInChildren<Settings>().transform;
+            set = can.GetComponent<Settings>().transform;
             print("LOOOOOOOOOOOOOOOOOOOOOOO"+set.name);
             set.gameObject.SetActive(false);
             set.SetParent(bobscan);

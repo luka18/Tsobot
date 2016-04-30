@@ -9,10 +9,7 @@ public class Chat : MonoBehaviour {
     [SerializeField] 
     Text Text, TextCurrentMsg;
 
-    [SerializeField]
-    LocalP lp;
-
-    PlayerChat pc;
+    PlayerCalls pc;
 
     RB2 Myrb2;
 
@@ -54,11 +51,12 @@ public class Chat : MonoBehaviour {
     }
     
 
-    public void Setting()
+    public void Setting(GameObject obj)
     {
-       /* GameObject lol = lp.Getlocal();
-        pc = lol.GetComponent<PlayerChat>();
-        Myrb2 = pc.GetComponent<RB2>();*/
+        GameObject lol = obj;
+        pc = lol.GetComponent<PlayerCalls>();
+        
+        Myrb2 = pc.GetComponent<RB2>();
     }
 
 	// Use this for initialization
@@ -85,12 +83,13 @@ public class Chat : MonoBehaviour {
         }
         if (Input.GetKeyDown(InChat))
         {
+            print("ChatOn");
             ChatOn = true;
         }
 
         if (ChatOn && Input.GetButtonDown("Enter_Chat"))
         {
-            //pc.Send(msg);
+            pc.Send(msg);
         }
     }
     public void ChatModif( string str)

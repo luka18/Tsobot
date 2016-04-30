@@ -5,7 +5,31 @@ using System.Collections;
 
 public class PlayerCalls : NetworkBehaviour {
 
+    Chat lechat;
+    void Start()
+    {
+        lechat = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<Chat>();
+        print("Chat" + lechat.gameObject.name);
+    }
 
+     [Command]
+
+     void Cmd_com(string msg)
+     {
+         Rpc_com(msg);
+     }
+
+     [ClientRpc]
+
+     void Rpc_com(string msg)
+     {
+         lechat.ChatModif(msg);
+     }
+
+     public void Send(string msg)
+     {
+         Cmd_com(msg);
+     }
     [ClientRpc]
     public void RpcCall(GameObject obj)
     {
