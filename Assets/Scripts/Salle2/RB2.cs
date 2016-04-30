@@ -300,6 +300,24 @@ public class RB2 : MonoBehaviour
         Cursor.lockState = CamLock;
 
     }
+    public void LockForChat()
+    {
+        if(CamLock != CursorLockMode.Locked)
+        {
+            Cursor.visible = true;
+            CamLock = CursorLockMode.None;
+            Cursor.lockState = CamLock;
+        }
+    }
+    public void UnlockForChat()
+    {
+        if(CamLock == CursorLockMode.Locked)
+        {
+            Cursor.visible = false;
+            CamLock = CursorLockMode.Locked;
+            Cursor.lockState = CamLock;
+        }
+    }
 
 
     void OnCollisionStay(Collision coll)

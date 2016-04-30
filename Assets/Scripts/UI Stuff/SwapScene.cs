@@ -32,13 +32,13 @@ public class SwapScene : MonoBehaviour
         
         yield return new WaitForEndOfFrame();
         can = GameObject.FindWithTag("UI");
+        print("can"+can);
         print(can);
         if (can.transform.childCount == 4) // CHANGE NUM OF CHILD HERE 
         {
             print("found");
-            print(can.name + "caname0");
             can.GetComponent<Canvas>().enabled = false;
-            Destroy(set.gameObject);
+            // Destroy(set.gameObject);
             set = can.GetComponent<Settings>().transform;
             print("LOOOOOOOOOOOOOOOOOOOOOOO"+set.name);
             set.gameObject.SetActive(false);

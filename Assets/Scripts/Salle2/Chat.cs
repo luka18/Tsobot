@@ -55,6 +55,7 @@ public class Chat : MonoBehaviour {
     {
         GameObject lol = obj;
         pc = lol.GetComponent<PlayerCalls>();
+        print("pc" + pc.gameObject.name);
         
         Myrb2 = pc.GetComponent<RB2>();
     }
