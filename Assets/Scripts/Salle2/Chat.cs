@@ -81,8 +81,9 @@ public class Chat : MonoBehaviour
         if (ChatOn)
         {
             print("azcaec" + inputfield.gameObject.name);
-            inputfield.ActivateInputField();
+            //inputfield.ActivateInputField();
             msg = inputfield.text;
+            Myrb2.LockForChat();
         }
         if (Input.GetKeyDown(InChat))
         {
@@ -94,8 +95,10 @@ public class Chat : MonoBehaviour
         {
             pc.Send(msg);
             print("aaaa");
-            inputfield.DeactivateInputField();
+            //inputfield.DeactivateInputField();
+            //inputfield.enabled = false;
             print("bbbb");
+            Myrb2.UnlockForChat();
         }
     }
     public void ChatModif(string str)
