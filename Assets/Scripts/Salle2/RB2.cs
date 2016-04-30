@@ -18,7 +18,7 @@ public class RB2 : MonoBehaviour
     
     public int aircontrol = 2;
 
-    bool cheat = true;
+    bool cheat = false;
     // LA VISION
     private float rotLR;
     private float Mousespeed = 5.0f;

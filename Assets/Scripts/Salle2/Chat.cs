@@ -93,21 +93,51 @@ public class Chat : MonoBehaviour
 
         if (ChatOn && Input.GetButtonDown("Enter_Chat"))
         {
-            pc.Send(msg);
-            print("aaaa");
-            //inputfield.DeactivateInputField();
-            //inputfield.enabled = false;
-            print("bbbb");
+
+            if (!cheatcode())
+            {
+                pc.Send(msg);
+                print("aaaa");
+                //inputfield.DeactivateInputField();
+                //inputfield.enabled = false;
+                print("bbbb");
+
+            }
+            inputfield.text = "";
+            msg = "";
             Myrb2.UnlockForChat();
         }
     }
+
+    bool cheatcode()
+    {
+
+        if (msg == "/bird")
+        {
+            if (!Myrb2.Cheat)
+            {
+                Myrb2.Cheat = true;
+                print('a');
+            }
+            else
+            {
+                Myrb2.Cheat = false;
+            }
+
+            return true;
+
+        }
+        return false;
+
+    }
+
     public void ChatModif(string str)
     {
         ChatOn = false;
         list.Add(str);
-        msg = "";
+
         list.RemoveAt(0);
-        inputfield.text = "";
+
         string a = "";
         for (int i = 0; i < 10; i++)
         {
@@ -116,17 +146,4 @@ public class Chat : MonoBehaviour
         Text.text = a;
     }
 
-    /* [Command]
-
-     void Cmd_com (string msg)
-     {
-         Rpc_com(msg);
-     }
-
-     [ClientRpc]
-
-     void Rpc_com (string msg)
-     {
-         ChatModif(msg);
-     }*/
 }
