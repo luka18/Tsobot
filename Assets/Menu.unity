@@ -10926,6 +10926,7 @@ MonoBehaviour:
   passwordInp2: {fileID: 1637787002}
   transi: {fileID: 641648071}
   notdec: {fileID: 1846358661}
+  swapsc: {fileID: 865260269}
   Roomback: {fileID: 334687905}
 --- !u!1 &1301289356
 GameObject:
@@ -16554,6 +16555,7 @@ MonoBehaviour:
   bobscan: {fileID: 947520300}
   mainmenu: {fileID: 474466973}
   Quit: {fileID: 11862924}
+  myname: 
 --- !u!1 &1951004078
 GameObject:
   m_ObjectHideFlags: 0
@@ -17761,7 +17763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 57704385}
-  TextCurrentMsg: {fileID: 1050265293}
+  inputfield: {fileID: 0}
 --- !u!114 &2074783632
 MonoBehaviour:
   m_ObjectHideFlags: 0

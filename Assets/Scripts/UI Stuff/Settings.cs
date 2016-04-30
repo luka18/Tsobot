@@ -41,7 +41,7 @@ public class Settings : MonoBehaviour {
 
     Color basecol;
     Color basred;
-    
+    public string myname;
 
     public void Awake()
     {

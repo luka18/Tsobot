@@ -17,8 +17,8 @@ public class RB2 : MonoBehaviour
     private Vector3 desiredmove;
     
     public int aircontrol = 2;
-    
-    
+
+    bool cheat = true;
     // LA VISION
     private float rotLR;
     private float Mousespeed = 5.0f;
@@ -340,10 +340,20 @@ public class RB2 : MonoBehaviour
             
         }
     
+    public bool Cheat
+    {
+        get { return cheat; }
+        set { cheat = value; }
+    }
+        
+        
+
     void OnCollisionExit(Collision collisionInfo)
     {
-        
-        grounded = false;
+        if (!cheat)
+        {
+            grounded = false;
+        }
           
     }
    

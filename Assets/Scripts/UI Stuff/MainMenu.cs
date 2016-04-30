@@ -33,7 +33,8 @@ public class MainMenu : MonoBehaviour
     MainRotate transi;
     [SerializeField]
     GameObject notdec;
-
+    [SerializeField]
+    SwapScene swapsc;
 
 
     List<GameObject> ListServ = new List<GameObject>();
@@ -61,6 +62,7 @@ public class MainMenu : MonoBehaviour
         manager.matchName = roomname;
         manager.matchHost = pseudo;
         transi.JustClose();
+        swapsc.Set.name = pseudo;
         StartCoroutine(Creating());
     }
 
@@ -142,6 +144,7 @@ public class MainMenu : MonoBehaviour
         print(selected + "s");
         if (selected != -1)
         {
+            swapsc.Set.name = pseudo;
             transi.JustClose();
             StartCoroutine(Joining(selected));
         }
