@@ -71,7 +71,7 @@ public class Grap : NetworkBehaviour
 
     public void AddGrap(int i)
     {
-        NumOfGrap += 1;
+        NumOfGrap += i;
         if (grapui != null)
             grapui.SetNum(NumOfGrap);
 
