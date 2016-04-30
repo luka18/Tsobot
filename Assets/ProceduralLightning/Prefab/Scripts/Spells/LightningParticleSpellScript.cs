@@ -128,20 +128,9 @@ namespace DigitalRuby.ThunderAndLightning
         {
             base.Update();
 
-            if (EmissionParticleSystem != null && EmissionParticleSystem.isPlaying)
-            {
-                EmissionParticleSystem.transform.position = SpellStart.transform.position;
-                EmissionParticleSystem.transform.forward = Direction;
-            }
-            if (ParticleSystem != null)
-            {
-                if (ParticleSystem.isPlaying)
-                {
-                    ParticleSystem.transform.position = SpellStart.transform.position;
-                    ParticleSystem.transform.forward = Direction;
-                }
-                UpdateParticleLights();
-            }
+            
+            UpdateParticleLights();
+            
             collisionTimer -= Time.deltaTime;
         }
 

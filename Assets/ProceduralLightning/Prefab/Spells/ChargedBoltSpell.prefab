@@ -342,7 +342,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -353,7 +353,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -364,7 +364,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!82 &8297102
 AudioSource:
   m_ObjectHideFlags: 1
@@ -537,7 +537,9 @@ MonoBehaviour:
   CollisionForce: 15
   CollisionForceMode: 1
   CollisionParticleSystem: {fileID: 0}
-  CollisionMask: {}
+  CollisionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
   CollisionAudioSource: {fileID: 8269138}
   CollisionAudioClips:
   - {fileID: 8300000, guid: c30aa9f0943bee747b196d93733aacd9, type: 3}
@@ -559,17 +561,11 @@ MonoBehaviour:
   ParticleLightIntensity:
     Minimum: 1
     Maximum: 2
-  ParticleLightColor1:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  ParticleLightColor2:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  ParticleLightCullingMask: {}
+  ParticleLightColor1: {r: 1, g: 1, b: 1, a: 1}
+  ParticleLightColor2: {r: 1, g: 1, b: 1, a: 1}
+  ParticleLightCullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!198 &19806792
 ParticleSystem:
   m_ObjectHideFlags: 1

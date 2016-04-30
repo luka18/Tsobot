@@ -33,6 +33,8 @@ public class PlayerSetup : NetworkBehaviour {
             GameObject.FindGameObjectWithTag("LocalP").GetComponent<LocalP>().Setlocal(gameObject);
             transform.GetChild(2).gameObject.SetActive(false);
             sceneCamera = Camera.main;
+            transform.GetChild(0).tag = "MainCamera";
+            print(GameObject.FindGameObjectsWithTag("MainCamera").Length);
             if (sceneCamera!=null)
             {
                 sceneCamera.gameObject.SetActive(false);

@@ -252,7 +252,6 @@ public class RB2 : MonoBehaviour
             Myrigidbody.AddForce(forcetoadd, ForceMode.VelocityChange);
 
         }
-
         else if (cancontrol && !sprinting)
         {
             desiredmove = (transform.forward * vertical + transform.right * horizontal) * speed;
@@ -261,9 +260,6 @@ public class RB2 : MonoBehaviour
             Myrigidbody.AddForce(forcetoadd, ForceMode.VelocityChange);
         }
 
-        
-        
-      
         jump = 0.0f;
         // les debug vecteur movement
        /* Debug.DrawRay(desiredmove + new Vector3(0, 1, 0), forcetoadd, Color.white, 1.0f);
