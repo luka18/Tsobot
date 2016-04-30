@@ -7,9 +7,9 @@ public class AddGrap : MonoBehaviour
     public int i;
     Grap grap;
 
-    void OnTriggerenter(Collider col)
+    void OnTriggerEnter(Collider col)
     {
         grap = col.GetComponent<Grap>();
-        grap.AddGrap(i);
+        grap.AddGrap(i);        
     }
 }
