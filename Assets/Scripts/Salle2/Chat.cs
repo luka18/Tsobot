@@ -4,10 +4,16 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 
-public class Chat : MonoBehaviour {
+public class Chat : MonoBehaviour
+{
 
-    [SerializeField] 
-    Text Text, TextCurrentMsg;
+    [SerializeField]
+
+    Text Text;
+
+    [SerializeField]
+
+    InputField inputfield;
 
     PlayerCalls pc;
 
@@ -47,24 +53,23 @@ public class Chat : MonoBehaviour {
         _instance = this;
 
         DontDestroyOnLoad(gameObject);
-        
+
     }
-    
+
 
     public void Setting(GameObject obj)
     {
         GameObject lol = obj;
         pc = lol.GetComponent<PlayerCalls>();
-        print("pc" + pc.gameObject.name);
-        
+
         Myrb2 = pc.GetComponent<RB2>();
     }
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
         list = new List<string>();
-        for (int i = 0; i<10;i++)
+        for (int i = 0; i < 10; i++)
         {
             list.Add("");
         }
@@ -75,31 +80,31 @@ public class Chat : MonoBehaviour {
     {
         if (ChatOn)
         {
-
-            foreach (char c in Input.inputString)
-            {
-                msg += c;
-            }
-            TextCurrentMsg.text = msg;
+            print("azcaec" + inputfield.gameObject.name);
+            inputfield.ActivateInputField();
+            msg = inputfield.text;
         }
         if (Input.GetKeyDown(InChat))
         {
-            print("ChatOn");
+            //print("ChatOn");
             ChatOn = true;
         }
 
         if (ChatOn && Input.GetButtonDown("Enter_Chat"))
         {
             pc.Send(msg);
+            print("aaaa");
+            inputfield.DeactivateInputField();
+            print("bbbb");
         }
     }
-    public void ChatModif( string str)
+    public void ChatModif(string str)
     {
         ChatOn = false;
         list.Add(str);
         msg = "";
         list.RemoveAt(0);
-        TextCurrentMsg.text = "";
+        inputfield.text = "";
         string a = "";
         for (int i = 0; i < 10; i++)
         {
@@ -108,17 +113,17 @@ public class Chat : MonoBehaviour {
         Text.text = a;
     }
 
-   /* [Command]
+    /* [Command]
 
-    void Cmd_com (string msg)
-    {
-        Rpc_com(msg);
-    }
+     void Cmd_com (string msg)
+     {
+         Rpc_com(msg);
+     }
 
-    [ClientRpc]
+     [ClientRpc]
 
-    void Rpc_com (string msg)
-    {
-        ChatModif(msg);
-    }*/
+     void Rpc_com (string msg)
+     {
+         ChatModif(msg);
+     }*/
 }
