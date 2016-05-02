@@ -4,6 +4,8 @@ using System.Collections;
 public class MainCalculator : MonoBehaviour {
 
     int[,,] Tab0;
+    int[,,] Tab1;
+    int[,,] Tab2;
     public struct Cdonne
     {
         public int x, y;
@@ -36,13 +38,14 @@ public class MainCalculator : MonoBehaviour {
     GameObject lvl1;
     [SerializeField]
     GameObject lvl2;
-    [SerializeField]
-    GameObject lvl3;
 
     Cdonne Tofind;
     // Use this for initialization
     void Start () {
         Tab0 = new int[4, 4,2] { { { 1, 0 }, { 0, 3 }, { 0, 1 }, { 0, 6 } }, { { 0, 2 }, { 0, 5 }, { 0, 4 }, { 0, -3 } }, { { 0, -4 }, { 0, 5 }, { 0, -2 }, { 0, 1 } }, { { 0, 8 }, { 0, 2 }, { 0, 3 }, { 0, 8 } } };
+        Tab1 = new int[4, 4, 2] { { { 1, 8 }, { 0, 3 }, { 0, 1 }, { 0, 4 } }, { { 0, 2 }, { 0, 6 }, { 0, -2 }, { 0, 6 } }, { { 0, -3 }, { 0, -5 }, { 0, 3 }, { 0, -2 } }, { { 0, 4 }, { 0, 5 }, { 0, 2 }, { 0, 13 } } };
+        Tab2 = new int[4, 4, 2] { { { 1, 13 }, { 0, -5 }, { 0, 3 }, { 0, 3 } }, { { 0, -4 }, { 0, 1 }, { 0, -1 }, { 0, -4 } }, { { 0, 3 }, { 0, -6 }, { 0, 2 }, { 0, -7 } }, { { 0, 5 }, { 0, 2 }, { 0, -3 }, { 0, 4 } } };
+
         coord = new Cdonne(0, 0);
         lightpath = GetComponent<DigitalRuby.ThunderAndLightning.LightningBoltPathScript>();
         
@@ -203,18 +206,14 @@ public class MainCalculator : MonoBehaviour {
         switch(currentlvl)
         {
             case 1:
-                //currenttab = tab1;
+                currenttab = Tab1;
+                lvl0.SetActive(true);
                 lvl1.SetActive(true);
                 break;
             case 2:
                 lvl1.SetActive(false);
                 lvl2.SetActive(true);
-                //curenttab= tab2;
-                break;
-            case 3:
-                lvl2.SetActive(false);
-                lvl3.SetActive(true);
-                //curenttab = tab3;
+                currenttab = Tab2;
                 break;
         }
 
