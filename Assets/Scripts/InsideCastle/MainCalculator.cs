@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 using System.Collections;
 
 public class MainCalculator : MonoBehaviour {
@@ -39,12 +40,13 @@ public class MainCalculator : MonoBehaviour {
     [SerializeField]
     GameObject lvl2;
 
+
     Cdonne Tofind;
     // Use this for initialization
     void Start () {
         Tab0 = new int[4, 4,2] { { { 1, 0 }, { 0, 3 }, { 0, 1 }, { 0, 6 } }, { { 0, 2 }, { 0, 5 }, { 0, 4 }, { 0, -3 } }, { { 0, -4 }, { 0, 5 }, { 0, -2 }, { 0, 1 } }, { { 0, 8 }, { 0, 2 }, { 0, 3 }, { 0, 8 } } };
-        Tab1 = new int[4, 4, 2] { { { 1, 8 }, { 0, 3 }, { 0, 1 }, { 0, 4 } }, { { 0, 2 }, { 0, 6 }, { 0, -2 }, { 0, 6 } }, { { 0, -3 }, { 0, -5 }, { 0, 3 }, { 0, -2 } }, { { 0, 4 }, { 0, 5 }, { 0, 2 }, { 0, 13 } } };
-        Tab2 = new int[4, 4, 2] { { { 1, 13 }, { 0, -5 }, { 0, 3 }, { 0, 3 } }, { { 0, -4 }, { 0, 1 }, { 0, -1 }, { 0, -4 } }, { { 0, 3 }, { 0, -6 }, { 0, 2 }, { 0, -7 } }, { { 0, 5 }, { 0, 2 }, { 0, -3 }, { 0, 4 } } };
+        Tab2 = new int[4, 4, 2] { { { 1, 13 }, { 0, -5 }, { 0, 3 }, { 0, 3 } }, { { 0, -4 }, { 0, 1 }, { 0, -1 }, { 0, -4 } }, { { 0, 3 }, { 0, -6 }, { 0, 2 }, { 0, -7 } }, { { 0, 5 }, { 0, 2 }, { 0, -3 }, { 0, 0 } } };
+        Tab1 = new int[4, 4, 2] { { { 1, 8 }, { 0, 3 }, { 0, 1 }, { 0, 4 } }, { { 0, 2 }, { 0, 6 }, { 0, 2 }, { 0, -6 } }, { { 0, 3 }, { 0, -5 }, { 0, 3 }, { 0, -2 } }, { { 0, 4 }, { 0, -5 }, { 0, 2 }, { 0, 9 } } };
 
         coord = new Cdonne(0, 0);
         lightpath = GetComponent<DigitalRuby.ThunderAndLightning.LightningBoltPathScript>();
@@ -62,19 +64,19 @@ public class MainCalculator : MonoBehaviour {
         if (coord.x - 1 >= 0  )
         {
             coord.x -= 1;
-            if (Tab0[coord.x, coord.y, 0] == 0)
+            if (currenttab[coord.x, coord.y, 0] == 0)
             {
                 toadd++;
-                Tab0[coord.x, coord.y, 0] = toadd;
-                currentsomme += Tab0[coord.x, coord.y, 1];
+                currenttab[coord.x, coord.y, 0] = toadd;
+                currentsomme += currenttab[coord.x, coord.y, 1];
                 lightpath.LightningPath.List.Add(GetGO(coord.x, coord.y));
                 GetGO(coord.x, coord.y).GetComponent<Renderer>().material = blue;
             }
-            else if (Tab0[coord.x, coord.y, 0] == toadd - 1)
+            else if (currenttab[coord.x, coord.y, 0] == toadd - 1)
             {
                 toadd--;
-                Tab0[coord.x + 1, coord.y, 0] = 0;
-                currentsomme -= Tab0[coord.x + 1, coord.y, 1];
+                currenttab[coord.x + 1, coord.y, 0] = 0;
+                currentsomme -= currenttab[coord.x + 1, coord.y, 1];
                 lightpath.LightningPath.List.RemoveAt(lightpath.LightningPath.List.Count - 1);
                 GetGO(coord.x + 1, coord.y).GetComponent<Renderer>().material = def;
             }
@@ -90,21 +92,23 @@ public class MainCalculator : MonoBehaviour {
         if (coord.x + 1 < 4)
         {
             coord.x += 1;
-            if (Tab0[coord.x, coord.y, 0] == 0)
+            if (currenttab[coord.x, coord.y, 0] == 0)
             {
                 toadd++;
-                Tab0[coord.x, coord.y, 0] = toadd;
-                currentsomme += Tab0[coord.x, coord.y, 1];
+                currenttab[coord.x, coord.y, 0] = toadd;
+                currentsomme += currenttab[coord.x, coord.y, 1];
+                GameObject getgo = GetGO(coord.x, coord.y);
                 lightpath.LightningPath.List.Add(GetGO(coord.x,coord.y));
                 GetGO(coord.x,coord.y).GetComponent<Renderer>().material = blue;
             }
-            else if (Tab0[coord.x, coord.y, 0] == toadd-1)
+            else if (currenttab[coord.x, coord.y, 0] == toadd-1)
             {
                 toadd--;
-                Tab0[coord.x-1, coord.y, 0] = 0;
-                currentsomme -= Tab0[coord.x-1 , coord.y, 1];
+                currenttab[coord.x-1, coord.y, 0] = 0;
+                currentsomme -= currenttab[coord.x-1 , coord.y, 1];
                 lightpath.LightningPath.List.RemoveAt(lightpath.LightningPath.List.Count - 1);
                 GetGO(coord.x-1,coord.y).GetComponent<Renderer>().material = def;
+     
             }
             else
                 coord.x -= 1;
@@ -119,19 +123,19 @@ public class MainCalculator : MonoBehaviour {
         if (coord.y - 1 >= 0)
         {
             coord.y -= 1;
-            if (Tab0[coord.x, coord.y, 0] == 0)
+            if (currenttab[coord.x, coord.y, 0] == 0)
             {
                 toadd++;
-                Tab0[coord.x, coord.y, 0] = toadd;
-                currentsomme += Tab0[coord.x, coord.y, 1];
+                currenttab[coord.x, coord.y, 0] = toadd;
+                currentsomme += currenttab[coord.x, coord.y, 1];
                 lightpath.LightningPath.List.Add(GetGO(coord.x, coord.y));
                 GetGO(coord.x, coord.y).GetComponent<Renderer>().material = blue;
             }
             else if (Tab0[coord.x, coord.y, 0] == toadd - 1)
             {
                 toadd--;
-                Tab0[coord.x, coord.y + 1, 0] = 0;
-                currentsomme -= Tab0[coord.x, coord.y + 1, 1];
+                currenttab[coord.x, coord.y + 1, 0] = 0;
+                currentsomme -= currenttab[coord.x, coord.y + 1, 1];
                 lightpath.LightningPath.List.RemoveAt(lightpath.LightningPath.List.Count - 1);
                 GetGO(coord.x, coord.y + 1).GetComponent<Renderer>().material = def;
             }
@@ -147,19 +151,19 @@ public class MainCalculator : MonoBehaviour {
         if (coord.y + 1 < 4)
         {
             coord.y += 1;
-            if (Tab0[coord.x, coord.y, 0] == 0)
+            if (currenttab[coord.x, coord.y, 0] == 0)
             {
                 toadd++;
-                Tab0[coord.x, coord.y, 0] = toadd;
-                currentsomme += Tab0[coord.x, coord.y, 1];
+                currenttab[coord.x, coord.y, 0] = toadd;
+                currentsomme += currenttab[coord.x, coord.y, 1];
                 lightpath.LightningPath.List.Add(GetGO(coord.x, coord.y));
                 GetGO(coord.x, coord.y).GetComponent<Renderer>().material = blue;
             }
             else if (Tab0[coord.x, coord.y, 0] == toadd - 1)
             {
                 toadd--;
-                Tab0[coord.x, coord.y - 1, 0] = 0;
-                currentsomme -= Tab0[coord.x, coord.y - 1, 1];
+                currenttab[coord.x, coord.y - 1, 0] = 0;
+                currentsomme -= currenttab[coord.x, coord.y - 1, 1];
                 lightpath.LightningPath.List.RemoveAt(lightpath.LightningPath.List.Count - 1);
                 GetGO(coord.x, coord.y - 1).GetComponent<Renderer>().material = def;
             }
@@ -175,7 +179,7 @@ public class MainCalculator : MonoBehaviour {
     {
         if (coord.x == 3 && coord.y == 2 || coord.y == 3 && coord.x == 2)
         {
-            if (currentsomme == Tab0[Tofind.x, Tofind.y, 1])
+            if (currentsomme == currenttab[Tofind.x, Tofind.y, 1])
             {
                 //do wini stuff
                 lightpath.LightningPath.List.Add(GetGO(3, 3));
@@ -200,14 +204,18 @@ public class MainCalculator : MonoBehaviour {
         elecparticle.StopSpell();
         elecparticle.DeactivateSpell();
     }
-    public void NextLvl()
+     void NextLvl()
     {
+        print("in it");
         currentlvl += 1;
+        print(currentlvl);
+        clearall();
         switch(currentlvl)
         {
             case 1:
+                print("incase1");
                 currenttab = Tab1;
-                lvl0.SetActive(true);
+                lvl0.SetActive(false);
                 lvl1.SetActive(true);
                 break;
             case 2:
@@ -218,7 +226,17 @@ public class MainCalculator : MonoBehaviour {
         }
 
     }
-
+    void clearall()
+    {
+        for(int i = 2; i < lightpath.LightningPath.List.Count-1; i++)
+        {
+            lightpath.LightningPath.List[i].GetComponent<Renderer>().material = def;
+        }
+        print("lightpathlist" + lightpath.LightningPath.List.Count);
+        lightpath.LightningPath.List.RemoveRange(2, lightpath.LightningPath.List.Count-2);
+        coord.x = 0;
+        coord.y = 0;
+    }
    
 
     GameObject GetGO(int x, int y)
