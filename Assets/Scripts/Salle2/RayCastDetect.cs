@@ -218,7 +218,6 @@ public class RayCastDetect : NetworkBehaviour {
     [ClientRpc]
     void RpcChangeCal(GameObject obj, int i)
     {
-
         obj.GetComponent<OnlyLink>().SendMc(i);
     }
 
@@ -362,6 +361,7 @@ public class RayCastDetect : NetworkBehaviour {
                         }
                         if(hit.transform.name== "ButtonRight")
                         {
+                            print("got it my man ?");
                             CmdChangeCal(hit.transform.gameObject, 1);
                         }
                         if (hit.transform.name == "ButtonUp")

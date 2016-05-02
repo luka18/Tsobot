@@ -23,13 +23,21 @@ public class MainCalculator : MonoBehaviour {
     DigitalRuby.ThunderAndLightning.LightningParticleSpellScript elecparticle;
     [SerializeField]
     CallLightning calllight;
-
+    int[,,] currenttab;
     int currentsomme;
     DigitalRuby.ThunderAndLightning.LightningBoltPathScript lightpath;
-    
 
+    int currentlvl;
     Cdonne coord;
     AudioSource aud;
+    [SerializeField]
+    GameObject lvl0;
+    [SerializeField]
+    GameObject lvl1;
+    [SerializeField]
+    GameObject lvl2;
+    [SerializeField]
+    GameObject lvl3;
 
     Cdonne Tofind;
     // Use this for initialization
@@ -42,8 +50,8 @@ public class MainCalculator : MonoBehaviour {
         toadd = 1;
         Tofind = new Cdonne(3, 3);
         aud = GetComponent<AudioSource>();
-        
-        
+        currentlvl = 0;
+        currenttab = Tab0;
 	}
 
     public void Left()
@@ -102,13 +110,7 @@ public class MainCalculator : MonoBehaviour {
             print("currentpos" + coord.x + coord.y);
         }
     }
-    public void Update()
-    {
-        if(Input.GetKey(KeyCode.Space))
-        {
-            StartCoroutine(winnieannim());
-        }
-    }
+
     public void Up()
     {
         if (coord.y - 1 >= 0)
@@ -174,9 +176,7 @@ public class MainCalculator : MonoBehaviour {
             {
                 //do wini stuff
                 lightpath.LightningPath.List.Add(GetGO(3, 3));
-                aud.Play();
-                elecparticle.ActivateSpell();
-                elecparticle.CastSpell();
+                StartCoroutine(winnieannim());
             }
         }
     }
@@ -190,13 +190,35 @@ public class MainCalculator : MonoBehaviour {
         yield return new WaitForSeconds(0.4f);
         calllight.LightningStrike(new Vector3(290, 100, -12), new Vector3(290, 36, -12));
         yield return new WaitForSeconds(0.4f);
+        NextLvl();
         calllight.LightningStrike(new Vector3(271, 100, -13), new Vector3(271, 35, -13));
         yield return new WaitForSeconds(0.4f);
         calllight.LightningStrike(new Vector3(271, 100, -13), new Vector3(271, 35, -13));
         elecparticle.StopSpell();
         elecparticle.DeactivateSpell();
     }
+    public void NextLvl()
+    {
+        currentlvl += 1;
+        switch(currentlvl)
+        {
+            case 1:
+                //currenttab = tab1;
+                lvl1.SetActive(true);
+                break;
+            case 2:
+                lvl1.SetActive(false);
+                lvl2.SetActive(true);
+                //curenttab= tab2;
+                break;
+            case 3:
+                lvl2.SetActive(false);
+                lvl3.SetActive(true);
+                //curenttab = tab3;
+                break;
+        }
 
+    }
 
    
 
