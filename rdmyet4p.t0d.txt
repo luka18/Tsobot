@@ -1,0 +1,365 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   Assets/ADG_Textures/walls_vol1/wall05/Materials/wall05_Specular.mat
+#	new file:   Assets/Images/Materials/metalgrid.mat
+#	renamed:    Assets/InsideCastle2/LightingData.asset.meta -> Assets/Images/Materials/metalgrid.mat.meta
+#	new file:   Assets/Images/Materials/rock 8.mat
+#	new file:   Assets/Images/Materials/rock 8.mat.meta
+#	new file:   Assets/Images/Materials/texturemetal 1.mat
+#	new file:   Assets/Images/Materials/texturemetal 1.mat.meta
+#	new file:   Assets/Images/Materials/texturemetal.mat
+#	new file:   Assets/Images/Materials/texturemetal.mat.meta
+#	new file:   Assets/Images/Materials/ying.mat
+#	new file:   Assets/Images/Materials/ying.mat.meta
+#	renamed:    Assets/Images/SkyBoxes.meta -> Assets/Images/Sprites/SkyBoxes.meta
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysBack2048.png -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysBack2048.png
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysBack2048.png.meta -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysBack2048.png.meta
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysDown2048.png -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysDown2048.png
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysDown2048.png.meta -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysDown2048.png.meta
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysFront2048.png -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysFront2048.png
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysFront2048.png.meta -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysFront2048.png.meta
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysLeft2048.png -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysLeft2048.png
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysLeft2048.png.meta -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysLeft2048.png.meta
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysRight2048.png -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysRight2048.png
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysRight2048.png.meta -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysRight2048.png.meta
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysUp2048.png -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysUp2048.png
+#	renamed:    Assets/Images/SkyBoxes/CloudyLightRaysUp2048.png.meta -> Assets/Images/Sprites/SkyBoxes/CloudyLightRaysUp2048.png.meta
+#	renamed:    Assets/Images/SkyBoxes/SkyboxCloudyRay.mat -> Assets/Images/Sprites/SkyBoxes/SkyboxCloudyRay.mat
+#	renamed:    Assets/Images/SkyBoxes/SkyboxCloudyRay.mat.meta -> Assets/Images/Sprites/SkyBoxes/SkyboxCloudyRay.mat.meta
+#	new file:   Assets/Images/metalgrid.jpg
+#	new file:   Assets/Images/metalgrid.jpg.meta
+#	new file:   Assets/Images/texturemetal.jpg
+#	new file:   Assets/Images/texturemetal.jpg.meta
+#	new file:   Assets/Images/ying.png
+#	new file:   Assets/Images/ying.png.meta
+#	modified:   Assets/InsideCastle2.unity
+#	deleted:    Assets/InsideCastle2/LightingData.asset
+#	deleted:    Assets/InsideCastle2/Lightmap-0_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-0_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-0_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-0_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-10_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-10_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-10_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-10_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-11_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-11_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-11_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-11_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-12_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-12_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-12_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-12_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-13_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-13_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-13_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-13_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-14_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-14_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-14_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-14_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-15_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-15_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-15_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-15_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-16_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-16_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-16_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-16_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-17_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-17_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-17_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-17_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-18_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-18_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-18_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-18_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-19_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-19_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-19_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-19_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-1_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-1_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-20_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-20_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-20_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-20_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-21_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-21_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-21_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-21_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-22_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-22_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-22_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-22_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-23_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-23_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-23_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-23_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-24_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-24_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-24_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-24_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-25_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-25_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-25_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-25_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-26_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-26_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-26_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-26_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-27_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-27_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-27_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-27_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-28_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-28_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-28_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-28_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-29_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-29_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-29_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-29_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-2_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-2_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-30_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-30_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-30_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-30_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-31_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-31_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-31_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-31_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-32_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-32_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-32_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-32_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-33_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-33_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-33_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-33_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-34_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-34_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-34_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-34_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-35_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-35_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-35_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-35_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-36_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-36_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-36_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-36_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-37_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-37_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-37_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-37_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-38_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-38_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-38_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-38_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-39_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-39_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-39_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-39_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-3_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-3_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-40_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-40_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-40_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-40_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-41_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-41_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-41_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-41_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-42_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-42_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-42_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-42_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-43_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-43_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-43_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-43_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-44_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-44_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-44_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-44_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-45_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-45_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-45_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-45_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-46_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-46_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-46_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-46_comp_light.exr.meta
+#
+# Changes not staged for commit:
+#	deleted:    Assets/InsideCastle2/Lightmap-1_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-1_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-2_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-2_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-3_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-3_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-4_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-4_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-4_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-4_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-5_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-5_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-5_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-5_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-6_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-6_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-6_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-6_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-7_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-7_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-7_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-7_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-8_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-8_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-8_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-8_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-9_comp_dir.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-9_comp_dir.exr.meta
+#	deleted:    Assets/InsideCastle2/Lightmap-9_comp_light.exr
+#	deleted:    Assets/InsideCastle2/Lightmap-9_comp_light.exr.meta
+#	deleted:    Assets/InsideCastle2/ReflectionProbe-0.exr
+#	deleted:    Assets/InsideCastle2/ReflectionProbe-0.exr.meta
+#	modified:   Assets/Nature.unity
+#	modified:   Assets/NatureStarterKit2/Nature/bush01.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/bush02.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/bush03.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/bush04.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/bush05.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/bush06.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/tree01.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/tree02.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/tree03.prefab
+#	modified:   Assets/NatureStarterKit2/Nature/tree04.prefab
+#	modified:   Assets/Scripts/Salle2/PlayerCalls.cs
+#	modified:   Assets/Start3.unity
+#	deleted:    Assets/Start3/LightingData.asset
+#	deleted:    Assets/Start3/LightingData.asset.meta
+#	deleted:    Assets/Start3/Lightmap-0_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-0_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-0_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-0_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-10_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-10_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-10_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-10_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-11_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-11_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-11_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-11_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-12_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-12_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-12_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-12_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-13_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-13_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-13_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-13_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-14_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-14_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-14_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-14_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-15_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-15_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-15_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-15_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-16_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-16_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-16_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-16_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-17_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-17_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-17_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-17_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-1_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-1_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-1_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-1_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-2_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-2_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-2_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-2_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-3_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-3_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-3_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-3_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-4_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-4_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-4_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-4_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-5_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-5_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-5_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-5_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-6_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-6_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-6_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-6_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-7_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-7_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-7_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-7_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-8_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-8_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-8_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-8_comp_light.exr.meta
+#	deleted:    Assets/Start3/Lightmap-9_comp_dir.exr
+#	deleted:    Assets/Start3/Lightmap-9_comp_dir.exr.meta
+#	deleted:    Assets/Start3/Lightmap-9_comp_light.exr
+#	deleted:    Assets/Start3/Lightmap-9_comp_light.exr.meta
+#	deleted:    Assets/Start3/ReflectionProbe-0.exr
+#	deleted:    Assets/Start3/ReflectionProbe-0.exr.meta
+#	modified:   Assets/Textures/The_Texture_Lab/TL_Substances/TL_Concrete_Asphalt_02/Material/TL_Concrete_Asphalt_02.mat
+#
+# Untracked files:
+#	Assets/Materials/Wood/texture wood 13.mat
+#	Assets/Materials/Wood/texture wood 13.mat.meta
+#	Assets/Materials/Wood/texture wood 14.mat
+#	Assets/Materials/Wood/texture wood 14.mat.meta
+#	Assets/Materials/Wood/texture wood 15.mat
+#	Assets/Materials/Wood/texture wood 15.mat.meta
+#	Assets/Metal textures pack.meta
+#	Assets/Metal textures pack/
+#	Assets/Scripts/DoorOpenTrigger.cs
+#	Assets/Scripts/DoorOpenTrigger.cs.meta
+#	Assets/Textures/The_Texture_Lab/TL_Substances/TL_Concrete_Asphalt_02/Material/TL_Concrete_Asphalt_03.mat
+#	Assets/Textures/The_Texture_Lab/TL_Substances/TL_Concrete_Asphalt_02/Material/TL_Concrete_Asphalt_03.mat.meta
+#	Assets/Textures/The_Texture_Lab/TL_Substances/TL_Concrete_Asphalt_02/Material/TL_Concrete_Asphalt_04.mat
+#	Assets/Textures/The_Texture_Lab/TL_Substances/TL_Concrete_Asphalt_02/Material/TL_Concrete_Asphalt_04.mat.meta
+#	Assets/Textures/The_Texture_Lab/TL_Substances/TL_Concrete_Asphalt_02/Material/TL_Concrete_Asphalt_05.mat
+#	Assets/Textures/The_Texture_Lab/TL_Substances/TL_Concrete_Asphalt_02/Material/TL_Concrete_Asphalt_05.mat.meta
+#	Assets/texturepackA/materials/stripes 10.mat
+#	Assets/texturepackA/materials/stripes 10.mat.meta
+#	Assets/texturepackA/materials/stripes 2.mat
+#	Assets/texturepackA/materials/stripes 2.mat.meta
+#	Assets/texturepackA/materials/stripes 3.mat
+#	Assets/texturepackA/materials/stripes 3.mat.meta
+#	Assets/texturepackA/materials/stripes 4.mat
+#	Assets/texturepackA/materials/stripes 4.mat.meta
+#	Assets/texturepackA/materials/stripes 5.mat
+#	Assets/texturepackA/materials/stripes 5.mat.meta
+#	Assets/texturepackA/materials/stripes 6.mat
+#	Assets/texturepackA/materials/stripes 6.mat.meta
+#	Assets/texturepackA/materials/stripes 7.mat
+#	Assets/texturepackA/materials/stripes 7.mat.meta
+#	Assets/texturepackA/materials/stripes 8.mat
+#	Assets/texturepackA/materials/stripes 8.mat.meta
+#	Assets/texturepackA/materials/stripes 9.mat
+#	Assets/texturepackA/materials/stripes 9.mat.meta
+#	Assets/trylight.meta
+#	Assets/trylight.unity
+#	Assets/trylight.unity.meta
+#	Assets/trylight/
+#
+

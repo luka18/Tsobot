@@ -63,5 +63,15 @@ public class PlayerCalls : NetworkBehaviour {
     {
         obj.GetComponent<MainCastle>().Reset();
     }
+    [Command]
+    public void CmdOpenDoorNextlvl(GameObject obj)
+    {
+        RpcOpenDoorNextlvl(obj);
+    }
+    [ClientRpc]
+    void RpcOpenDoorNextlvl(GameObject obj)
+    {
+        obj.GetComponent<DoorOpenTrigger>().gopen();
+    }
 
 }
