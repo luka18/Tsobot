@@ -135,15 +135,10 @@ public class GrapChanges : MonoBehaviour {
         Screen.SetResolution(chosenres.width, chosenres.height, fullscreen);
         QualitySettings.SetQualityLevel(QualSet, true);
 
-        if (colortochange == 0)
-            colorscript.enabled = false;
-        else
-        {
-            /*colorscript.enabled = true;
-            colorscript.mode = (ColorBlindMode)colortochange;
-            colorscript.SetColor();*/
-            InMana.ToChangeCol = colortochange;
-        }
+       
+         
+        InMana.ToChangeCol = colortochange;
+        
 
     }
 
@@ -175,10 +170,11 @@ public class GrapChanges : MonoBehaviour {
 
     public void ChangeColor()
     {
-        /*ColorBlindFilter[] ColorFilt = FindObjectsOfType(typeof(ColorBlindFilter)) as ColorBlindFilter[];
+        ColorBlindFilter[] ColorFilt = FindObjectsOfType(typeof(ColorBlindFilter)) as ColorBlindFilter[];
+        print("cololen"+ColorFilt.Length);
         ColorFilt[0].mode = (ColorBlindMode)colortochange;
         ColorFilt[0].SetColor();
-        */
+        
         if (Camerafilter0 == null)
             Camerafilter0 = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ColorBlindFilter>();
         if(colortochange != 0)

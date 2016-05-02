@@ -84,7 +84,12 @@ public class RB2 : MonoBehaviour
     }
     public float SMS
     {
-        set { Mousespeed = value; }
+        set { Mousespeed = value;
+            if (YMS < 0)
+                YMS = -Mousespeed;
+            else
+                YMS = Mousespeed;
+        }
     }
     public float SYMS
     {
@@ -184,7 +189,7 @@ public class RB2 : MonoBehaviour
         if ((Input.GetKeyUp(InCrouch)) && Crouched)
         {
             print("ok?");
-            if (HeadTtrigger.goup && grounded)
+            if (HeadTtrigger.goup)
             {
                 transform.Translate(0, 0.25f, 0);
                 ht.UnCrouchPlease();

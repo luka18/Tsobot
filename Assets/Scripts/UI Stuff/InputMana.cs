@@ -76,7 +76,7 @@ public class InputMana : MonoBehaviour {
         MyRb2 = lp.GetComponent<RB2>();
         MyGrap = lp.GetComponent<Grap>();
         colfilt = lp.GetComponentInChildren<ColorBlindFilter>();
-        MyChat = GameObject.FindGameObjectWithTag("UI").GetComponent<Chat>();
+        MyChat = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<Chat>();
         InMain = false;
         Apply();
 
@@ -189,10 +189,6 @@ public class InputMana : MonoBehaviour {
             colfilt.enabled = true;
             colfilt.mode = (ColorBlindMode)ToChangeColor;
             colfilt.SetColor();
-        }
-        else
-        {
-            graphc.ChangeColor();
         }
 
     }

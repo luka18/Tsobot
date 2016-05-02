@@ -34,11 +34,11 @@ public class SwapScene : MonoBehaviour
         can = GameObject.FindWithTag("UI");
         print("can"+can);
         print(can);
-        if (can.transform.childCount == 4) // CHANGE NUM OF CHILD HERE 
+        if (can.transform.childCount == 5) // CHANGE NUM OF CHILD HERE 
         {
             print("found");
             can.GetComponent<Canvas>().enabled = false;
-            // Destroy(set.gameObject);
+            Destroy(set.gameObject);
             set = can.GetComponent<Settings>().transform;
             print("LOOOOOOOOOOOOOOOOOOOOOOO"+set.name);
             set.gameObject.SetActive(false);

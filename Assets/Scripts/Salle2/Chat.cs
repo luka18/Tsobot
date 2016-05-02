@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 
 public class Chat : MonoBehaviour
@@ -24,6 +25,7 @@ public class Chat : MonoBehaviour
     bool ChatOn;
 
 
+
     KeyCode InChat = KeyCode.Y;
 
     List<string> list;
@@ -34,7 +36,6 @@ public class Chat : MonoBehaviour
     {
         set { InChat = value; }
     }
-
 
     private static Chat _instance = null;
     public static Chat Instance
@@ -87,8 +88,8 @@ public class Chat : MonoBehaviour
         }
         if (Input.GetKeyDown(InChat))
         {
-            //print("ChatOn");
             ChatOn = true;
+            inputfield.ActivateInputField();
         }
 
         if (ChatOn && Input.GetButtonDown("Enter_Chat"))
@@ -97,15 +98,16 @@ public class Chat : MonoBehaviour
             if (!cheatcode())
             {
                 pc.Send(msg);
-                print("aaaa");
-                //inputfield.DeactivateInputField();
-                //inputfield.enabled = false;
-                print("bbbb");
 
             }
+            
+            
             inputfield.text = "";
             msg = "";
+            inputfield.DeactivateInputField();
+            EventSystem.current.SetSelectedGameObject(null);
             Myrb2.UnlockForChat();
+            ChatOn = false;
         }
     }
 
@@ -133,11 +135,9 @@ public class Chat : MonoBehaviour
 
     public void ChatModif(string str)
     {
-        ChatOn = false;
+      
         list.Add(str);
-
         list.RemoveAt(0);
-
         string a = "";
         for (int i = 0; i < 10; i++)
         {
