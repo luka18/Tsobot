@@ -9,7 +9,12 @@ public class AddGrap : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        grap = col.GetComponent<Grap>();
-        grap.AddGrap(i);        
+        if (col.tag == "Player")
+        {
+            grap = col.GetComponent<Grap>();
+            print(col.name);
+            print(grap);
+            grap.AddGrap(i);
+        }
     }
 }
